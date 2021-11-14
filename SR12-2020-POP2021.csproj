@@ -69,7 +69,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Administrator.cs" />
+    <Compile Include="Model\Adresa.cs" />
+    <Compile Include="Model\EPol.cs" />
+    <Compile Include="Model\EStatusTreninga.cs" />
+    <Compile Include="Model\ETipKorisnika.cs" />
+    <Compile Include="Model\FitnesCentar.cs" />
+    <Compile Include="Model\Instruktor.cs" />
     <Compile Include="Model\Korisnik.cs" />
+    <Compile Include="Model\Polaznik.cs" />
+    <Compile Include="Model\Trening.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
