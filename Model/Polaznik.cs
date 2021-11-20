@@ -9,6 +9,7 @@ namespace SR12_2020_POP2021.Model
     [Serializable]
     public class Polaznik
     {
+        //za sada je string, kasnije ce biti objekat Trening
         private string _rezervisaniTrening;
 
         public string RezervisaniTrening
