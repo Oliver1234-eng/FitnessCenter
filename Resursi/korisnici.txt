@@ -1,0 +1,4 @@
+Pera;Peric;123456;pera@gmail.com;MUSKI;Administrator;True
+mika;Mikic;654321;mika@gmail.com;ZENSKI;Instruktor;True
+zika;Zikic;111111;zika@gmail.com;ZENSKI;Polaznik;True
+PROBA;PROBIC;111333;email;MUSKI;Instruktor;True
