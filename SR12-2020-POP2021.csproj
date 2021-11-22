@@ -55,6 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Servisi\AdministratorskiServis.cs" />
+    <Compile Include="Servisi\IKorisnickiServis.cs" />
+    <Compile Include="Servisi\InstruktorskiServis.cs" />
+    <Compile Include="Servisi\KorisnickiServis.cs" />
+    <Compile Include="Servisi\PolaznickiServis.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -109,7 +114,6 @@
   <ItemGroup>
     <Folder Include="MojiIzuzeci\" />
     <Folder Include="Resursi\" />
-    <Folder Include="Servisi\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
