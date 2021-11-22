@@ -72,11 +72,13 @@
     <Compile Include="Model\Administrator.cs" />
     <Compile Include="Model\Adresa.cs" />
     <Compile Include="Model\EPol.cs" />
+    <Compile Include="Model\EStatus.cs" />
     <Compile Include="Model\EStatusTreninga.cs" />
     <Compile Include="Model\ETipKorisnika.cs" />
     <Compile Include="Model\FitnesCentar.cs" />
     <Compile Include="Model\Instruktor.cs" />
     <Compile Include="Model\Korisnik.cs" />
+    <Compile Include="Model\Podaci.cs" />
     <Compile Include="Model\Polaznik.cs" />
     <Compile Include="Model\Trening.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -103,6 +105,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MojiIzuzeci\" />
+    <Folder Include="Resursi\" />
+    <Folder Include="Servisi\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
