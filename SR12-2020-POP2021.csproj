@@ -60,10 +60,14 @@
     <Compile Include="MojiIzuzeci\KorisnikNePostojiException.cs" />
     <Compile Include="MojiIzuzeci\PolaznikNePostojiException.cs" />
     <Compile Include="Servisi\AdministratorskiServis.cs" />
+    <Compile Include="Servisi\FitnesCentarServis.cs" />
+    <Compile Include="Servisi\IFitnesCentarServis.cs" />
     <Compile Include="Servisi\IKorisnickiServis.cs" />
     <Compile Include="Servisi\InstruktorskiServis.cs" />
+    <Compile Include="Servisi\ITreningServis.cs" />
     <Compile Include="Servisi\KorisnickiServis.cs" />
     <Compile Include="Servisi\PolaznickiServis.cs" />
+    <Compile Include="Servisi\TreningServis.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
