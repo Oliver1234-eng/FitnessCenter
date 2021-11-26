@@ -8,5 +8,7 @@ namespace SR12_2020_POP2021.Servisi
 {
     public interface ITreningServis
     {
+        void SacuvajTrening(string nazivFajla);
+        void CitajTrening(string nazivFajla);
     }
 }

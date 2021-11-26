@@ -8,5 +8,7 @@ namespace SR12_2020_POP2021.Servisi
 {
     public interface IFitnesCentarServis
     {
+        void SacuvajFitnesCentar(string nazivFajla);
+        void CitajFitnesCentar(string nazivFajla);
     }
 }

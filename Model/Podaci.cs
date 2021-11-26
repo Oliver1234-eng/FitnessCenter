@@ -17,6 +17,8 @@ namespace SR12_2020_POP2021.Model
         private IKorisnickiServis instruktorskiServis;
         private IKorisnickiServis administratorskiServis;
         private IKorisnickiServis polaznickiServis;
+        private IFitnesCentarServis fitnesCentarServis;
+        private ITreningServis treningServis;
 
         private Podaci()
         {
@@ -24,6 +26,8 @@ namespace SR12_2020_POP2021.Model
             instruktorskiServis = new InstruktorskiServis();
             administratorskiServis = new AdministratorskiServis();
             polaznickiServis = new PolaznickiServis();
+            fitnesCentarServis = new FitnesCentarServis();
+            treningServis = new TreningServis();
         }
 
         static Podaci()
@@ -50,14 +54,23 @@ namespace SR12_2020_POP2021.Model
             Instruktori = new List<Instruktor>();
             Administratori = new List<Administrator>();
             Polaznici = new List<Polaznik>();
+            FitnesCentarPodaci = new List<FitnesCentar>();
+            Treninzi = new List<Trening>();
 
-            Adresa adresa = new Adresa
+            //Adresa adresa = new Adresa
+            //{
+            //Grad = "Novi Sad",
+            //Drzava = "Srbija",
+            //Ulica = "ulica1",
+            //Broj = "22",
+            //ID = "1"
+            //};
+
+            FitnesCentar fitnesCentar = new FitnesCentar
             {
-                Grad = "Novi Sad",
-                Drzava = "Srbija",
-                Ulica = "ulica1",
-                Broj = "22",
-                ID = "1"
+                Sifra = "1",
+                Naziv = "Fitnes centar FIT",
+                Adresa = "Ulica1, broj1, grad1, drzava1"
             };
 
             Korisnik korisnik1 = new Korisnik();
@@ -66,7 +79,7 @@ namespace SR12_2020_POP2021.Model
             korisnik1.Email = "pera@gmail.com";
             korisnik1.JMBG = "123456";
             korisnik1.Lozinka = "peki";
-            korisnik1.Adresa = adresa;
+            korisnik1.Adresa = "1, Ulica1, Broj1, Grad1";
             korisnik1.Pol = EPol.MUSKI;
             korisnik1.TipKorisnika = ETipKorisnika.Administrator;
             korisnik1.Aktivan = true;
@@ -80,7 +93,7 @@ namespace SR12_2020_POP2021.Model
                 Lozinka = "zika",
                 Pol = EPol.ZENSKI,
                 TipKorisnika = ETipKorisnika.Instruktor,
-                Adresa = adresa,
+                Adresa = "2, Ulica2, Broj2, Grad2",
                 Aktivan = true
             };
 
@@ -93,7 +106,7 @@ namespace SR12_2020_POP2021.Model
                 Lozinka = "zika",
                 Pol = EPol.ZENSKI,
                 TipKorisnika = ETipKorisnika.Polaznik,
-                Adresa = adresa,
+                Adresa = "3, Ulica3, Broj3, Grad3",
                 Aktivan = true
             };
 
@@ -119,14 +132,29 @@ namespace SR12_2020_POP2021.Model
                 Korisnik = korisnik3
             };
 
+            Trening trening1 = new Trening
+            {
+                Sifra = "1",
+                Datum = "DATUM1",
+                VremePocetka = "VREME1",
+                Trajanje = "1h",
+                StatusTreninga = EStatusTreninga.Slobodan,
+                Instruktor = korisnik4,
+                Polaznik = korisnik6,
+                Aktivan = true
+
+            };
+
             // Console. WriteLine(korisnik4.ToString());
 
+            FitnesCentarPodaci.Add(fitnesCentar);
             Korisnici.Add(korisnik1);
             Korisnici.Add(korisnik2);
             Korisnici.Add(korisnik3);
             Instruktori.Add(korisnik4);
             Administratori.Add(korisnik5);
             Polaznici.Add(korisnik6);
+            Treninzi.Add(trening1);
         }
 
         public void SacuvajEntitete(string nazivFajla)
@@ -146,6 +174,14 @@ namespace SR12_2020_POP2021.Model
             else if (nazivFajla.Contains("polaznici"))
             {
                 polaznickiServis.SacuvajKorisnike(nazivFajla);
+            }
+            else if (nazivFajla.Contains("fitnesCentar"))
+            {
+                fitnesCentarServis.SacuvajFitnesCentar(nazivFajla);
+            }
+            else if (nazivFajla.Contains("treninzi"))
+            {
+                treningServis.SacuvajTrening(nazivFajla);
             }
         }
 
@@ -176,6 +212,14 @@ namespace SR12_2020_POP2021.Model
             else if (nazivFajla.Contains("polaznici"))
             {
                 polaznickiServis.CitajKorisnike(nazivFajla);
+            }
+            else if (nazivFajla.Contains("fitnesCentar"))
+            {
+                fitnesCentarServis.CitajFitnesCentar(nazivFajla);
+            }
+            else if (nazivFajla.Contains("treninzi"))
+            {
+                treningServis.CitajTrening(nazivFajla);
             }
         }
 

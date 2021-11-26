@@ -1,0 +1,1 @@
+1;Fitnes centar FIT;Ulica1, broj1, grad1, drzava1

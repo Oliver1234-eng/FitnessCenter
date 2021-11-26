@@ -49,9 +49,9 @@ namespace SR12_2020_POP2021.Model
             set { _JMBG = value; }
         }
 
-        private Adresa _adresa;
+        private string _adresa;
 
-        public Adresa Adresa
+        public string Adresa
         {
             get { return _adresa; }
             set { _adresa = value; }
@@ -94,7 +94,7 @@ namespace SR12_2020_POP2021.Model
 
         public string UpisiKorisnikaUFajl()
         {
-            return Ime + ";" + Prezime + ";" + JMBG + ";" + Email + ";" + Pol + ";" + TipKorisnika + ";" + Aktivan;
+            return Ime + ";" + Prezime + ";" + JMBG + ";" + Email + ";" + Lozinka + ";" + Pol + ";" + TipKorisnika + ";" + Adresa + ";" + Aktivan;
         }
 
     }

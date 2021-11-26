@@ -25,12 +25,22 @@ namespace SR12_2020_POP2021.Model
             set { _naziv = value; }
         }
 
-        private Adresa _adresa;
+        private string _adresa;
 
-        public Adresa Adresa
+        public string Adresa
         {
             get { return _adresa; }
             set { _adresa = value; }
+        }
+
+        public override string ToString()
+        {
+            return "Sifra fitnes centra: " + _sifra + ", naziv: " + _naziv + ".";
+        }
+
+        public string UpisUFitnesCentarUFajl()
+        {
+            return Sifra + ";" + Naziv + ";" + Adresa;
         }
 
 

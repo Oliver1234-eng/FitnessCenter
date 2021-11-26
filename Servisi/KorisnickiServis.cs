@@ -19,9 +19,9 @@ namespace SR12_2020_POP2021.Servisi
                 while ((line = file.ReadLine()) != null)
                 {
                     string[] korisnikIzFajla = line.Split(';');
-                    Enum.TryParse(korisnikIzFajla[4], out EPol pol);
-                    Enum.TryParse(korisnikIzFajla[5], out ETipKorisnika tip);
-                    Boolean.TryParse(korisnikIzFajla[6], out Boolean aktivan);
+                    Enum.TryParse(korisnikIzFajla[5], out EPol pol);
+                    Enum.TryParse(korisnikIzFajla[6], out ETipKorisnika tip);
+                    Boolean.TryParse(korisnikIzFajla[8], out Boolean aktivan);
 
                     Korisnik korisnik = new Korisnik
                     {
@@ -29,8 +29,10 @@ namespace SR12_2020_POP2021.Servisi
                         Prezime = korisnikIzFajla[1],
                         JMBG = korisnikIzFajla[2],
                         Email = korisnikIzFajla[3],
+                        Lozinka = korisnikIzFajla[4],
                         Pol = pol,
                         TipKorisnika = tip,
+                        Adresa = korisnikIzFajla[7],
                         Aktivan = aktivan
 
                     };

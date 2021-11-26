@@ -75,7 +75,12 @@ namespace SR12_2020_POP2021.Model
 
         public override string ToString()
         {
-            return "Sifra treninga:" + _sifra;
+            return "Sifra treninga: " + _sifra + ", instuktor koji drzi: " + _intruktor.Korisnik.Ime + ", polaznik: " + _polaznik.Korisnik.Ime;
+        }
+
+        public string UpisUTreningUFajl()
+        {
+            return Sifra + ";" + Datum + ";" + VremePocetka + ";" + Trajanje + ";" + StatusTreninga + ";" + Instruktor.Korisnik.Ime + ";" + Polaznik.Korisnik.Ime + ";" + Aktivan;
         }
 
     }
