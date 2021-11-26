@@ -59,6 +59,12 @@
     <Compile Include="MojiIzuzeci\InstruktorNePostojiException.cs" />
     <Compile Include="MojiIzuzeci\KorisnikNePostojiException.cs" />
     <Compile Include="MojiIzuzeci\PolaznikNePostojiException.cs" />
+    <Compile Include="Prozori\HomeWindow1.xaml.cs">
+      <DependentUpon>HomeWindow1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Prozori\InstruktoriWindow.xaml.cs">
+      <DependentUpon>InstruktoriWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Servisi\AdministratorskiServis.cs" />
     <Compile Include="Servisi\FitnesCentarServis.cs" />
     <Compile Include="Servisi\IFitnesCentarServis.cs" />
@@ -80,6 +86,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Prozori\HomeWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Prozori\InstruktoriWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Administrator.cs" />
@@ -120,7 +134,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Prozori\" />
     <Folder Include="Resursi\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
