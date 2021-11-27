@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SR12_2020_POP2021.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,35 @@ namespace SR12_2020_POP2021.Prozori
         public InstruktoriWindow()
         {
             InitializeComponent();
+
+            UpdateView();
+        }
+
+        private void UpdateView()
+        {
+            dgInstruktori.ItemsSource = null;
+            dgInstruktori.ItemsSource = Podaci.Instanca.Korisnici;
+            dgInstruktori.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
+        }
+
+        private void dgInstruktori_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
+        {
+            //if (e.PropertyName.Equals("Aktivan"))
+            //{
+            //e.Column.Visibility = Visibility.Collapsed;
+            //}
+        }
+
+        private void miDodajInstruktora_Click(object sender, RoutedEventArgs e)
+        {
+            DodajIzmeniInstruktoraProzor dodajIzmeniInstruktoraProzor = new DodajIzmeniInstruktoraProzor(null); //rezim dodavanja
+
+            this.Hide();
+            if ((bool)dodajIzmeniInstruktoraProzor.ShowDialog())
+            {
+                UpdateView();
+            }
+            this.Show();
         }
     }
 }
