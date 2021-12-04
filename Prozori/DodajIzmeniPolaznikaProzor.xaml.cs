@@ -16,38 +16,38 @@ using System.Windows.Shapes;
 namespace SR12_2020_POP2021.Prozori
 {
     /// <summary>
-    /// Interaction logic for DodajIzmeniInstruktoraProzor.xaml
+    /// Interaction logic for DodajIzmeniPolaznikaProzor.xaml
     /// </summary>
-    public partial class DodajIzmeniInstruktoraProzor : Window
+    public partial class DodajIzmeniPolaznikaProzor : Window
     {
-        private Instruktor odabraniInstruktor;
+        private Polaznik odabraniPolaznik;
         private EStatus odabraniStatus;
-        public DodajIzmeniInstruktoraProzor(Instruktor instruktor, EStatus eStatus = EStatus.DODAJ)
+        public DodajIzmeniPolaznikaProzor(Polaznik polaznik, EStatus eStatus = EStatus.DODAJ)
         {
             InitializeComponent();
 
-            odabraniInstruktor = instruktor;
+            odabraniPolaznik = polaznik;
             odabraniStatus = eStatus;
 
             if (odabraniStatus.Equals(EStatus.IZMENI))
             {
-                this.Title = "Izmeni instruktora";
+                this.Title = "Izmeni polaznika";
 
-                if (eStatus.Equals(EStatus.IZMENI) && instruktor != null)
+                if (eStatus.Equals(EStatus.IZMENI) && polaznik != null)
                 {
-                    txtIme.Text = instruktor.Korisnik.Ime;
-                    txtPrezime.Text = instruktor.Korisnik.Prezime;
-                    txtEmail.Text = instruktor.Korisnik.Email;
-                    txtLozinka.Text = instruktor.Korisnik.Lozinka;
-                    txtAdresa.Text = instruktor.Korisnik.Adresa;
-                    txtJMBG.Text = instruktor.Korisnik.JMBG;
+                    txtIme.Text = polaznik.Korisnik.Ime;
+                    txtPrezime.Text = polaznik.Korisnik.Prezime;
+                    txtEmail.Text = polaznik.Korisnik.Email;
+                    txtLozinka.Text = polaznik.Korisnik.Lozinka;
+                    txtAdresa.Text = polaznik.Korisnik.Adresa;
+                    txtJMBG.Text = polaznik.Korisnik.JMBG;
                     txtJMBG.IsEnabled = false;
                 }
             }
 
             else
             {
-                this.Title = "Dodaj instruktora";
+                this.Title = "Dodaj polaznika";
             }
         }
 
@@ -74,7 +74,7 @@ namespace SR12_2020_POP2021.Prozori
                 Aktivan = true
             };
 
-            Instruktor instruktor = new Instruktor
+            Polaznik polaznik = new Polaznik
             {
                 //Ime = txtIme.Text,
                 //Prezime = txtPrezime.Text,
@@ -83,27 +83,27 @@ namespace SR12_2020_POP2021.Prozori
                 //Aktivan = true,
                 //Lozinka = txtIme.Text,
                 //TipKorisnika = tip,
-                Trening = "aaa",
+                RezervisaniTrening = "aaa",
                 Korisnik = k
             };
 
             if (odabraniStatus.Equals(EStatus.DODAJ))
             {
                 Podaci.Instanca.Korisnici.Add(k);
-                Podaci.Instanca.Instruktori.Add(instruktor);
+                Podaci.Instanca.Polaznici.Add(polaznik);
             }
 
             else
             {
-                int izmenaInstruktora = Podaci.Instanca.Instruktori.ToList().FindIndex(i => i.Korisnik.JMBG.Equals(txtJMBG.Text));
-                int izmenaKorisnika = Podaci.Instanca.Korisnici.ToList().FindIndex(i => i.JMBG.Equals(txtJMBG.Text));
+                int izmenaPolaznika = Podaci.Instanca.Polaznici.ToList().FindIndex(p => p.Korisnik.JMBG.Equals(txtJMBG.Text));
+                int izmenaKorisnika = Podaci.Instanca.Korisnici.ToList().FindIndex(p => p.JMBG.Equals(txtJMBG.Text));
 
                 Podaci.Instanca.Korisnici[izmenaKorisnika] = k;
-                Podaci.Instanca.Instruktori[izmenaInstruktora] = instruktor;
+                Podaci.Instanca.Polaznici[izmenaPolaznika] = polaznik;
             }
 
             Podaci.Instanca.SacuvajEntitete("korisnici.txt");
-            Podaci.Instanca.SacuvajEntitete("instruktori.txt");
+            Podaci.Instanca.SacuvajEntitete("polaznici.txt");
             this.Close();
         }
 

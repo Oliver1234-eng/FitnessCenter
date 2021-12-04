@@ -8,6 +8,8 @@
         Title="HomeWindow1" Height="450" Width="800">
     <Grid>
         <Label Name="lblWelcome" Content="Dobro dosli!" />
-        <Button Name="btnStart" Content="CRUD instruktori" Height="100" Width="200" Click="btnStart_Click" />
+        <Button Name="btnStart" Content="CRUD instruktori" Click="btnStart_Click" Margin="292,34,393.6,341" />
+        <Button Name="btnPolaznici" Content="CRUD polaznici" Click="btnPolaznici_Click" Margin="292,118,393.6,258" />
+        <Button Name="btnAdministratori" Content="CRUD administratori" Click="btnAdministratori_Click" Margin="292,200,393.6,174" />
     </Grid>
 </Window>

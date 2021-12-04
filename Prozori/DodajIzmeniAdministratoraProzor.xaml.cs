@@ -16,38 +16,38 @@ using System.Windows.Shapes;
 namespace SR12_2020_POP2021.Prozori
 {
     /// <summary>
-    /// Interaction logic for DodajIzmeniInstruktoraProzor.xaml
+    /// Interaction logic for DodajIzmeniAdministratoraProzor.xaml
     /// </summary>
-    public partial class DodajIzmeniInstruktoraProzor : Window
+    public partial class DodajIzmeniAdministratoraProzor : Window
     {
-        private Instruktor odabraniInstruktor;
+        private Administrator odabraniAdministrator;
         private EStatus odabraniStatus;
-        public DodajIzmeniInstruktoraProzor(Instruktor instruktor, EStatus eStatus = EStatus.DODAJ)
+        public DodajIzmeniAdministratoraProzor(Administrator administrator, EStatus eStatus = EStatus.DODAJ)
         {
             InitializeComponent();
 
-            odabraniInstruktor = instruktor;
+            odabraniAdministrator = administrator;
             odabraniStatus = eStatus;
 
             if (odabraniStatus.Equals(EStatus.IZMENI))
             {
-                this.Title = "Izmeni instruktora";
+                this.Title = "Izmeni administratora";
 
-                if (eStatus.Equals(EStatus.IZMENI) && instruktor != null)
+                if (eStatus.Equals(EStatus.IZMENI) && administrator != null)
                 {
-                    txtIme.Text = instruktor.Korisnik.Ime;
-                    txtPrezime.Text = instruktor.Korisnik.Prezime;
-                    txtEmail.Text = instruktor.Korisnik.Email;
-                    txtLozinka.Text = instruktor.Korisnik.Lozinka;
-                    txtAdresa.Text = instruktor.Korisnik.Adresa;
-                    txtJMBG.Text = instruktor.Korisnik.JMBG;
+                    txtIme.Text = administrator.Korisnik.Ime;
+                    txtPrezime.Text = administrator.Korisnik.Prezime;
+                    txtEmail.Text = administrator.Korisnik.Email;
+                    txtLozinka.Text = administrator.Korisnik.Lozinka;
+                    txtAdresa.Text = administrator.Korisnik.Adresa;
+                    txtJMBG.Text = administrator.Korisnik.JMBG;
                     txtJMBG.IsEnabled = false;
                 }
             }
 
             else
             {
-                this.Title = "Dodaj instruktora";
+                this.Title = "Dodaj administratora";
             }
         }
 
@@ -74,7 +74,7 @@ namespace SR12_2020_POP2021.Prozori
                 Aktivan = true
             };
 
-            Instruktor instruktor = new Instruktor
+            Administrator administrator = new Administrator
             {
                 //Ime = txtIme.Text,
                 //Prezime = txtPrezime.Text,
@@ -83,27 +83,26 @@ namespace SR12_2020_POP2021.Prozori
                 //Aktivan = true,
                 //Lozinka = txtIme.Text,
                 //TipKorisnika = tip,
-                Trening = "aaa",
                 Korisnik = k
             };
 
             if (odabraniStatus.Equals(EStatus.DODAJ))
             {
                 Podaci.Instanca.Korisnici.Add(k);
-                Podaci.Instanca.Instruktori.Add(instruktor);
+                Podaci.Instanca.Administratori.Add(administrator);
             }
 
             else
             {
-                int izmenaInstruktora = Podaci.Instanca.Instruktori.ToList().FindIndex(i => i.Korisnik.JMBG.Equals(txtJMBG.Text));
-                int izmenaKorisnika = Podaci.Instanca.Korisnici.ToList().FindIndex(i => i.JMBG.Equals(txtJMBG.Text));
+                int izmenaAdministratora = Podaci.Instanca.Administratori.ToList().FindIndex(a => a.Korisnik.JMBG.Equals(txtJMBG.Text));
+                int izmenaKorisnika = Podaci.Instanca.Korisnici.ToList().FindIndex(a => a.JMBG.Equals(txtJMBG.Text));
 
                 Podaci.Instanca.Korisnici[izmenaKorisnika] = k;
-                Podaci.Instanca.Instruktori[izmenaInstruktora] = instruktor;
+                Podaci.Instanca.Administratori[izmenaAdministratora] = administrator;
             }
 
             Podaci.Instanca.SacuvajEntitete("korisnici.txt");
-            Podaci.Instanca.SacuvajEntitete("instruktori.txt");
+            Podaci.Instanca.SacuvajEntitete("administratori.txt");
             this.Close();
         }
 

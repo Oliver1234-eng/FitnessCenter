@@ -30,7 +30,7 @@ namespace SR12_2020_POP2021.Prozori
         private void UpdateView()
         {
             dgInstruktori.ItemsSource = null;
-            dgInstruktori.ItemsSource = Podaci.Instanca.Korisnici;
+            dgInstruktori.ItemsSource = Podaci.Instanca.Instruktori;
             dgInstruktori.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
         }
 
@@ -52,6 +52,34 @@ namespace SR12_2020_POP2021.Prozori
                 UpdateView();
             }
             this.Show();
+        }
+
+        private void miIzmeniInstruktora_Click(object sender, RoutedEventArgs e)
+        {
+            Instruktor stariInstruktor = (Instruktor)dgInstruktori.SelectedItem;
+            DodajIzmeniInstruktoraProzor dodajIzmeniInstruktoraProzor = new DodajIzmeniInstruktoraProzor(stariInstruktor, EStatus.IZMENI);
+
+            this.Hide();
+            if (!(bool)dodajIzmeniInstruktoraProzor.ShowDialog())
+            {
+                //cancel kliknuto
+            }
+
+            this.Show();
+        }
+
+        private void miIzbrisiInstruktora_Click(object sender, RoutedEventArgs e)
+        {
+            Instruktor obrisiInstruktor = (Instruktor)dgInstruktori.SelectedItem;
+            Podaci.Instanca.ObrisiInstruktora(obrisiInstruktor.Korisnik.JMBG);
+
+            int index = Podaci.Instanca.Korisnici.ToList().FindIndex(i => i.JMBG.Equals(obrisiInstruktor.Korisnik.JMBG));
+            Podaci.Instanca.Korisnici[index].Aktivan = false;
+
+            Podaci.Instanca.SacuvajEntitete("korisnici.txt");
+            Podaci.Instanca.SacuvajEntitete("instruktori.txt");
+
+            UpdateView();
         }
     }
 }

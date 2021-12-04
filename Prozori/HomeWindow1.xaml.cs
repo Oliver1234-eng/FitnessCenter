@@ -26,6 +26,8 @@ namespace SR12_2020_POP2021.Prozori
 
             Podaci.Instanca.CitajEntitete("korisnici.txt");
             Podaci.Instanca.CitajEntitete("instruktori.txt");
+            Podaci.Instanca.CitajEntitete("polaznici.txt");
+            Podaci.Instanca.CitajEntitete("administratori.txt");
         }
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
@@ -33,6 +35,20 @@ namespace SR12_2020_POP2021.Prozori
             InstruktoriWindow instruktoriWindow = new InstruktoriWindow();
             this.Hide();
             instruktoriWindow.Show();
+        }
+
+        private void btnPolaznici_Click(object sender, RoutedEventArgs e)
+        {
+            PolazniciWindow polazniciWindow = new PolazniciWindow();
+            this.Hide();
+            polazniciWindow.Show();
+        }
+
+        private void btnAdministratori_Click(object sender, RoutedEventArgs e)
+        {
+            AdministratoriWindow administratoriWindow = new AdministratoriWindow();
+            this.Hide();
+            administratoriWindow.Show();
         }
     }
 }

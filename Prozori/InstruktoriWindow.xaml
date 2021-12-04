@@ -10,8 +10,8 @@
         <Menu HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0">
             <MenuItem Name="miInstruktori" Header="Instruktori">
                 <MenuItem Name="miDodajInstruktora" Header="Dodaj instruktora" Click="miDodajInstruktora_Click"></MenuItem>
-                <MenuItem Name="miIzmeniInstruktora" Header="Izmeni instruktora"></MenuItem>
-                <MenuItem Name="miIzbrisiInstruktora" Header="Izbrisi instruktora"></MenuItem>
+                <MenuItem Name="miIzmeniInstruktora" Header="Izmeni instruktora" Click="miIzmeniInstruktora_Click"></MenuItem>
+                <MenuItem Name="miIzbrisiInstruktora" Header="Izbrisi instruktora" Click="miIzbrisiInstruktora_Click"></MenuItem>
                 <Separator/>
                 <MenuItem Name="miProfil" Header="Profil instruktora"></MenuItem>
             </MenuItem>
