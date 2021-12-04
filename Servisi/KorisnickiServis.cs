@@ -1,4 +1,5 @@
 ﻿using SR12_2020_POP2021.Model;
+using SR12_2020_POP2021.MojiIzuzeci;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -49,6 +50,21 @@ namespace SR12_2020_POP2021.Servisi
                 {
                     file.WriteLine(korisnik.UpisiKorisnikaUFajl());
                 }
+        }
+
+        public void ObrisiKorisnika(string jmbg)
+        {
+            Korisnik korisnik = Podaci.Instanca.Korisnici.ToList().Find(k => k.JMBG.Equals(jmbg));
+            if (korisnik == null)
+            {
+                throw new KorisnikNePostojiException($"Ne postoji korisnik sa emailom: {jmbg}");
+            }
+
+            korisnik.Aktivan = false;
+            Console.WriteLine("Uspesno obrisan korisnik sa jmbg-om:" + jmbg);
+
+
+            Podaci.Instanca.SacuvajEntitete("korisnici.txt");
         }
     }
 }

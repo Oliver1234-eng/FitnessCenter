@@ -246,6 +246,21 @@ namespace SR12_2020_POP2021.Model
 
         }
 
+        public void ObrisiInstruktora(string jmbg)
+        {
+            instruktorskiServis.ObrisiKorisnika(jmbg);
+        }
+
+        public void ObrisiPolaznika(string jmbg)
+        {
+            polaznickiServis.ObrisiKorisnika(jmbg);
+        }
+
+        public void ObrisiAdministratora(string jmbg)
+        {
+            administratorskiServis.ObrisiKorisnika(jmbg);
+        }
+
         public void CuvanjeEntitetaBinarno(string nazivFajla)
         {
             IFormatter formatter = new BinaryFormatter();

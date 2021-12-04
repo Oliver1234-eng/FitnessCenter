@@ -10,5 +10,6 @@ namespace SR12_2020_POP2021.Servisi
     {
         void SacuvajKorisnike(string nazivFajla);
         void CitajKorisnike(string nazivFajla);
+        void ObrisiKorisnika(string jmbg);
     }
 }
