@@ -25,13 +25,13 @@
         <Label Grid.Column="0" Grid.Row="0" Name="lblSifra" Content="Sifra: " />
         <TextBox Grid.Column="1" Grid.Row="0" Name="txtSifra" />
 
-        <Label Grid.Column="0" Grid.Row="1" Name="lblDatum" Content="Datum: " />
+        <Label Grid.Column="0" Grid.Row="1" Name="lblDatum" Content="Datum (format DD:MM:GG): " />
         <TextBox Grid.Column="1" Grid.Row="1" Name="txtDatum" />
 
-        <Label Grid.Column="0" Grid.Row="2" Name="lblVremePocetka" Content="Vreme pocetka: " />
+        <Label Grid.Column="0" Grid.Row="2" Name="lblVremePocetka" Content="Vreme pocetka (): " />
         <TextBox Grid.Column="1" Grid.Row="2" Name="txtVremePocetka" />
 
-        <Label Grid.Column="0" Grid.Row="3" Name="lblTrajanje" Content="Trajanje: " />
+        <Label Grid.Column="0" Grid.Row="3" Name="lblTrajanje" Content="Trajanje (u satima): " />
         <TextBox Grid.Column="1" Grid.Row="3" Name="txtTrajanje" />
 
         <Label Grid.Column="0" Grid.Row="4" Name="lblStatusTreninga" Content="Status treninga: " />
