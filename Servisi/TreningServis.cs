@@ -1,4 +1,5 @@
 ﻿using SR12_2020_POP2021.Model;
+using SR12_2020_POP2021.MojiIzuzeci;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -51,6 +52,21 @@ namespace SR12_2020_POP2021.Servisi
                 {
                     file.WriteLine(trening.UpisUTreningUFajl());
                 }
+        }
+
+        public void ObrisiTrening(string sifra)
+        {
+            Trening trening = Podaci.Instanca.Treninzi.ToList().Find(t => t.Sifra.Equals(sifra));
+            if (trening == null)
+            {
+                throw new TreningNePostojiException($"Ne postoji trening sa sifrom: {sifra}");
+            }
+
+            trening.Aktivan = false;
+            Console.WriteLine("Uspesno obrisan trening sa sifrom:" + sifra);
+
+
+            Podaci.Instanca.SacuvajEntitete("treninzi.txt");
         }
     }
 }

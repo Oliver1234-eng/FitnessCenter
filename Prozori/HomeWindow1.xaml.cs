@@ -28,6 +28,7 @@ namespace SR12_2020_POP2021.Prozori
             Podaci.Instanca.CitajEntitete("instruktori.txt");
             Podaci.Instanca.CitajEntitete("polaznici.txt");
             Podaci.Instanca.CitajEntitete("administratori.txt");
+            Podaci.Instanca.CitajEntitete("treninzi.txt");
         }
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
@@ -49,6 +50,13 @@ namespace SR12_2020_POP2021.Prozori
             AdministratoriWindow administratoriWindow = new AdministratoriWindow();
             this.Hide();
             administratoriWindow.Show();
+        }
+
+        private void btnTreninzi_Click(object sender, RoutedEventArgs e)
+        {
+            TreninziWindow treninziWindow = new TreninziWindow();
+            this.Hide();
+            treninziWindow.Show();
         }
     }
 }

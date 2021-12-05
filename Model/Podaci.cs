@@ -260,6 +260,10 @@ namespace SR12_2020_POP2021.Model
         {
             administratorskiServis.ObrisiKorisnika(jmbg);
         }
+        public void ObrisiTrening(string sifra)
+        {
+            treningServis.ObrisiTrening(sifra);
+        }
 
         public void CuvanjeEntitetaBinarno(string nazivFajla)
         {

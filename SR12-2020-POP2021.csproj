@@ -59,6 +59,7 @@
     <Compile Include="MojiIzuzeci\InstruktorNePostojiException.cs" />
     <Compile Include="MojiIzuzeci\KorisnikNePostojiException.cs" />
     <Compile Include="MojiIzuzeci\PolaznikNePostojiException.cs" />
+    <Compile Include="MojiIzuzeci\TreningNePostojiException.cs" />
     <Compile Include="Prozori\AdministratoriWindow.xaml.cs">
       <DependentUpon>AdministratoriWindow.xaml</DependentUpon>
     </Compile>
@@ -71,6 +72,9 @@
     <Compile Include="Prozori\DodajIzmeniPolaznikaProzor.xaml.cs">
       <DependentUpon>DodajIzmeniPolaznikaProzor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Prozori\DodajIzmeniTreningProzor.xaml.cs">
+      <DependentUpon>DodajIzmeniTreningProzor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Prozori\HomeWindow1.xaml.cs">
       <DependentUpon>HomeWindow1.xaml</DependentUpon>
     </Compile>
@@ -79,6 +83,9 @@
     </Compile>
     <Compile Include="Prozori\PolazniciWindow.xaml.cs">
       <DependentUpon>PolazniciWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Prozori\TreninziWindow.xaml.cs">
+      <DependentUpon>TreninziWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Servisi\AdministratorskiServis.cs" />
     <Compile Include="Servisi\FitnesCentarServis.cs" />
@@ -117,6 +124,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Prozori\DodajIzmeniTreningProzor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Prozori\HomeWindow1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -126,6 +137,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Prozori\PolazniciWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Prozori\TreninziWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

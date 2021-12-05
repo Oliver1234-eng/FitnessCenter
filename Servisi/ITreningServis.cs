@@ -10,5 +10,6 @@ namespace SR12_2020_POP2021.Servisi
     {
         void SacuvajTrening(string nazivFajla);
         void CitajTrening(string nazivFajla);
+        void ObrisiTrening(string sifra);
     }
 }

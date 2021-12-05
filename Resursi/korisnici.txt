@@ -1,5 +1,7 @@
-Pera;Peric;123456;pera@gmail.com;peki;MUSKI;Administrator;1, Ulica1, Broj1, Grad1;True
+Peraa;Peric;123456;pera@gmail.com;peki;MUSKI;Administrator;1, Ulica1, Broj1, Grad1;True
 mika;Mikic;654321;mika@gmail.com;zika;ZENSKI;Instruktor;2, Ulica2, Broj2, Grad2;True
 zika;Zikic;111111;zika@gmail.com;zika;ZENSKI;Polaznik;3, Ulica3, Broj3, Grad3;True
 Test;Testic;123344;test@test.com;test123;MUSKI;Instruktor;5, Ulica, Broj, Grad, Drzava;True
 Instruktor1;Instruktoric1;445566;instruktor1@gmail.com;Instruktor123;MUSKI;Instruktor;S1, U1, B1, G1, D1;True
+noviINSSS;noviIns;443344;novi@gmail.com;novi123;MUSKI;Instruktor;Sifra, ulica, broj, grad, drzava;False
+noviPolLL;noviPol;555666;novi@gmail.com;noviPol123;MUSKI;Polaznik;Sifra, ulica, broj, grad, drzava;False
