@@ -9,19 +9,9 @@ namespace SR12_2020_POP2021.Model
     [Serializable]
     public class Instruktor
     {
-        //za sada je string, kasnije ce biti objekat Trening
-        private string _trening;
+        private RegistrovaniKorisnik _korisnik;
 
-        public string Trening
-        {
-            get { return _trening; }
-            set { _trening = value; }
-        }
-
-
-        private Korisnik _korisnik;
-
-        public Korisnik Korisnik
+        public RegistrovaniKorisnik Korisnik
         {
             get { return _korisnik; }
             set { _korisnik = value; }
@@ -29,12 +19,12 @@ namespace SR12_2020_POP2021.Model
 
         public override string ToString()
         {
-            return "Ja sam korisnik " + _korisnik.Ime + ". Moja email adresa je: " + _korisnik.Email + ". Ja sam instruktor.";
+            return "Ja sam instruktor i moje ime je:" + _korisnik.Ime + ", a moj email je :" + _korisnik.Email;
         }
 
-        public string UpisiInstruktoraUFajl()
+        public string InstruktorZaUpisUFajl()
         {
-            return Trening + ";" + Korisnik.JMBG;
+            return Korisnik.Email;
         }
     }
 }

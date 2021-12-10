@@ -2,19 +2,20 @@
 using SR12_2020_POP2021.MojiIzuzeci;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SR12_2020_POP2021.Servisi
+namespace SR12_2020_POP2021.Services
 {
-    public class TreningServis : ITreningServis
+    public class TreningService : ITreningService
     {
-        public void CitajTrening(string nazivFajla)
+        public void ReadWorkouts(string nazivFajla)
         {
-            Podaci.Instanca.Treninzi = new List<Trening>();
-            using (StreamReader file = new StreamReader(@"../../Resursi/" + nazivFajla))
+            Util.Instance.Treninzi = new ObservableCollection<Trening>();
+            using (StreamReader file = new StreamReader(@"../../Resources/" + nazivFajla))
             {
                 string line;
                 while ((line = file.ReadLine()) != null)
@@ -25,8 +26,8 @@ namespace SR12_2020_POP2021.Servisi
                     //Korisnik korisnik = Podaci.Instanca.Korisnici.Find(k => k.JMBG.Equals(instruktorIzFajla[1]));
                     //Boolean.TryParse(korisnikIzFajla[7], out Boolean aktivan);
                     Enum.TryParse(TreningIzFajla[4], out EStatusTreninga statusTreninga);
-                    Instruktor instruktor = Podaci.Instanca.Instruktori.Find(i => i.Korisnik.Ime.Equals(TreningIzFajla[5]));
-                    Polaznik polaznik = Podaci.Instanca.Polaznici.Find(p => p.Korisnik.Ime.Equals(TreningIzFajla[6]));
+                    //Instruktor instruktor = (Instruktor)Util.Instance.Instruktori.Where(i => i.Korisnik.Ime.Equals(TreningIzFajla[5]));
+                    //Polaznik polaznik = (Polaznik)Util.Instance.Polaznici.Where(p => p.Korisnik.Ime.Equals(TreningIzFajla[6]));
 
                     Trening trening = new Trening
                     {
@@ -35,38 +36,38 @@ namespace SR12_2020_POP2021.Servisi
                         VremePocetka = TreningIzFajla[2],
                         Trajanje = TreningIzFajla[3],
                         StatusTreninga = statusTreninga,
-                        Instruktor = instruktor,
-                        Polaznik = polaznik,
+                        Instruktor = TreningIzFajla[5],
+                        Polaznik = TreningIzFajla[6],
                         Aktivan = true
                     };
-                    Podaci.Instanca.Treninzi.Add(trening);
+                    Util.Instance.Treninzi.Add(trening);
                 }
             }
         }
 
-        public void SacuvajTrening(string nazivFajla)
+        public void SaveWorkout(string nazivFajla)
         {
-            using (StreamWriter file = new StreamWriter(@"../../Resursi/" + nazivFajla))
+            using (StreamWriter file = new StreamWriter(@"../../Resources/" + nazivFajla))
 
-                foreach (Trening trening in Podaci.Instanca.Treninzi)
+                foreach (Trening trening in Util.Instance.Treninzi)
                 {
                     file.WriteLine(trening.UpisUTreningUFajl());
                 }
         }
 
-        public void ObrisiTrening(string sifra)
+        public void DeleteWorkout(string sifra)
         {
-            Trening trening = Podaci.Instanca.Treninzi.ToList().Find(t => t.Sifra.Equals(sifra));
+            Trening trening = Util.Instance.Treninzi.ToList().Find(t => t.Sifra.Equals(sifra));
             if (trening == null)
             {
-                throw new TreningNePostojiException($"Ne postoji trening sa sifrom: {sifra}");
+                throw new TreningNotFoundException($"Ne postoji trening sa sifrom: {sifra}");
             }
 
             trening.Aktivan = false;
             Console.WriteLine("Uspesno obrisan trening sa sifrom:" + sifra);
 
 
-            Podaci.Instanca.SacuvajEntitete("treninzi.txt");
+            Util.Instance.SacuvajEntitet("treninzi.txt");
         }
     }
 }

@@ -1,0 +1,3 @@
+1;DATUM1;VREME1;1.5h;Slobodan;mika;zika;True
+2;DATUM22;VREME2;1h;Rezervisan;mika;zika;False
+3;DATUM3;VREME3;1h;Rezervisan;mika;zika;True

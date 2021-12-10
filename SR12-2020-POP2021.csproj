@@ -55,47 +55,48 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="MojiIzuzeci\AdministratorNePostojiException.cs" />
-    <Compile Include="MojiIzuzeci\InstruktorNePostojiException.cs" />
-    <Compile Include="MojiIzuzeci\KorisnikNePostojiException.cs" />
-    <Compile Include="MojiIzuzeci\PolaznikNePostojiException.cs" />
-    <Compile Include="MojiIzuzeci\TreningNePostojiException.cs" />
-    <Compile Include="Prozori\AdministratoriWindow.xaml.cs">
+    <Compile Include="Model\RegistrovaniKorisnik.cs" />
+    <Compile Include="Model\Util.cs" />
+    <Compile Include="MojiIzuzeci\TreningNotFoundException.cs" />
+    <Compile Include="MojiIzuzeci\UserNotFoundException.cs" />
+    <Compile Include="Services\AdministratorService.cs" />
+    <Compile Include="Services\IAdministratorService.cs" />
+    <Compile Include="Services\IInstruktorService.cs" />
+    <Compile Include="Services\InstruktorService.cs" />
+    <Compile Include="Services\IPolaznikService.cs" />
+    <Compile Include="Services\ITreningService.cs" />
+    <Compile Include="Services\IUserService.cs" />
+    <Compile Include="Services\PolaznikService.cs" />
+    <Compile Include="Services\TreningService.cs" />
+    <Compile Include="Services\UserService.cs" />
+    <Compile Include="Validations\EmailValidation.cs" />
+    <Compile Include="Windows\AdministratoriWindow.xaml.cs">
       <DependentUpon>AdministratoriWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Prozori\DodajIzmeniAdministratoraProzor.xaml.cs">
+    <Compile Include="Windows\DodajIzmeniAdministratoraProzor.xaml.cs">
       <DependentUpon>DodajIzmeniAdministratoraProzor.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Prozori\DodajIzmeniInstruktoraProzor.xaml.cs">
+    <Compile Include="Windows\DodajIzmeniInstruktoraProzor.xaml.cs">
       <DependentUpon>DodajIzmeniInstruktoraProzor.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Prozori\DodajIzmeniPolaznikaProzor.xaml.cs">
+    <Compile Include="Windows\DodajIzmeniPolaznikaProzor.xaml.cs">
       <DependentUpon>DodajIzmeniPolaznikaProzor.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Prozori\DodajIzmeniTreningProzor.xaml.cs">
+    <Compile Include="Windows\DodajIzmeniTreningProzor.xaml.cs">
       <DependentUpon>DodajIzmeniTreningProzor.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Prozori\HomeWindow1.xaml.cs">
+    <Compile Include="Windows\HomeWindow1.xaml.cs">
       <DependentUpon>HomeWindow1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Prozori\InstruktoriWindow.xaml.cs">
+    <Compile Include="Windows\InstruktoriWindow.xaml.cs">
       <DependentUpon>InstruktoriWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Prozori\PolazniciWindow.xaml.cs">
+    <Compile Include="Windows\PolazniciWindow.xaml.cs">
       <DependentUpon>PolazniciWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Prozori\TreninziWindow.xaml.cs">
+    <Compile Include="Windows\TreninziWindow.xaml.cs">
       <DependentUpon>TreninziWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Servisi\AdministratorskiServis.cs" />
-    <Compile Include="Servisi\FitnesCentarServis.cs" />
-    <Compile Include="Servisi\IFitnesCentarServis.cs" />
-    <Compile Include="Servisi\IKorisnickiServis.cs" />
-    <Compile Include="Servisi\InstruktorskiServis.cs" />
-    <Compile Include="Servisi\ITreningServis.cs" />
-    <Compile Include="Servisi\KorisnickiServis.cs" />
-    <Compile Include="Servisi\PolaznickiServis.cs" />
-    <Compile Include="Servisi\TreningServis.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -108,39 +109,39 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Prozori\AdministratoriWindow.xaml">
+    <Page Include="Windows\AdministratoriWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Prozori\DodajIzmeniAdministratoraProzor.xaml">
+    <Page Include="Windows\DodajIzmeniAdministratoraProzor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Prozori\DodajIzmeniInstruktoraProzor.xaml">
+    <Page Include="Windows\DodajIzmeniInstruktoraProzor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Prozori\DodajIzmeniPolaznikaProzor.xaml">
+    <Page Include="Windows\DodajIzmeniPolaznikaProzor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Prozori\DodajIzmeniTreningProzor.xaml">
+    <Page Include="Windows\DodajIzmeniTreningProzor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Prozori\HomeWindow1.xaml">
+    <Page Include="Windows\HomeWindow1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Prozori\InstruktoriWindow.xaml">
+    <Page Include="Windows\InstruktoriWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Prozori\PolazniciWindow.xaml">
+    <Page Include="Windows\PolazniciWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Prozori\TreninziWindow.xaml">
+    <Page Include="Windows\TreninziWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -154,7 +155,6 @@
     <Compile Include="Model\ETipKorisnika.cs" />
     <Compile Include="Model\FitnesCentar.cs" />
     <Compile Include="Model\Instruktor.cs" />
-    <Compile Include="Model\Korisnik.cs" />
     <Compile Include="Model\Podaci.cs" />
     <Compile Include="Model\Polaznik.cs" />
     <Compile Include="Model\Trening.cs" />
@@ -184,7 +184,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resursi\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
