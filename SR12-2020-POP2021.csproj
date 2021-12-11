@@ -70,32 +70,32 @@
     <Compile Include="Services\TreningService.cs" />
     <Compile Include="Services\UserService.cs" />
     <Compile Include="Validations\EmailValidation.cs" />
-    <Compile Include="Windows\AdministratoriWindow.xaml.cs">
-      <DependentUpon>AdministratoriWindow.xaml</DependentUpon>
+    <Compile Include="Windows\AddEditAdministratori.xaml.cs">
+      <DependentUpon>AddEditAdministratori.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\DodajIzmeniAdministratoraProzor.xaml.cs">
-      <DependentUpon>DodajIzmeniAdministratoraProzor.xaml</DependentUpon>
+    <Compile Include="Windows\AddEditInstructors.xaml.cs">
+      <DependentUpon>AddEditInstructors.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\DodajIzmeniInstruktoraProzor.xaml.cs">
-      <DependentUpon>DodajIzmeniInstruktoraProzor.xaml</DependentUpon>
+    <Compile Include="Windows\AddEditPolaznici.xaml.cs">
+      <DependentUpon>AddEditPolaznici.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\DodajIzmeniPolaznikaProzor.xaml.cs">
-      <DependentUpon>DodajIzmeniPolaznikaProzor.xaml</DependentUpon>
+    <Compile Include="Windows\AddEditTreninzi.xaml.cs">
+      <DependentUpon>AddEditTreninzi.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\DodajIzmeniTreningProzor.xaml.cs">
-      <DependentUpon>DodajIzmeniTreningProzor.xaml</DependentUpon>
+    <Compile Include="Windows\AllAdministratoriWindow.xaml.cs">
+      <DependentUpon>AllAdministratoriWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AllInstructorsWindow.xaml.cs">
+      <DependentUpon>AllInstructorsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AllPolazniciWindow.xaml.cs">
+      <DependentUpon>AllPolazniciWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AllTreninziWindow.xaml.cs">
+      <DependentUpon>AllTreninziWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\HomeWindow1.xaml.cs">
       <DependentUpon>HomeWindow1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\InstruktoriWindow.xaml.cs">
-      <DependentUpon>InstruktoriWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\PolazniciWindow.xaml.cs">
-      <DependentUpon>PolazniciWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\TreninziWindow.xaml.cs">
-      <DependentUpon>TreninziWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -109,39 +109,39 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Windows\AdministratoriWindow.xaml">
+    <Page Include="Windows\AddEditAdministratori.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\DodajIzmeniAdministratoraProzor.xaml">
+    <Page Include="Windows\AddEditInstructors.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\DodajIzmeniInstruktoraProzor.xaml">
+    <Page Include="Windows\AddEditPolaznici.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\DodajIzmeniPolaznikaProzor.xaml">
+    <Page Include="Windows\AddEditTreninzi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\DodajIzmeniTreningProzor.xaml">
+    <Page Include="Windows\AllAdministratoriWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AllInstructorsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AllPolazniciWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AllTreninziWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\HomeWindow1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\InstruktoriWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\PolazniciWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\TreninziWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -155,7 +155,6 @@
     <Compile Include="Model\ETipKorisnika.cs" />
     <Compile Include="Model\FitnesCentar.cs" />
     <Compile Include="Model\Instruktor.cs" />
-    <Compile Include="Model\Podaci.cs" />
     <Compile Include="Model\Polaznik.cs" />
     <Compile Include="Model\Trening.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">

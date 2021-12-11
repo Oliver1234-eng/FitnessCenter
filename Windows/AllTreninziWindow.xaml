@@ -1,0 +1,26 @@
+﻿<Window x:Class="SR12_2020_POP2021.Windows.AllTreninziWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SR12_2020_POP2021.Windows"
+        mc:Ignorable="d"
+        Title="AllTreninziWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.494,0.56">
+        <Menu Name="Menu" HorizontalAlignment="Left" Height="43" Margin="92,43,0,0" VerticalAlignment="Top" Width="71">
+            <MenuItem Name="MITrening" Header="Treninzi">
+                <MenuItem Name="DodavanjeTreninga" Header="DodavanjeTreninga" Click="DodavanjeTreninga_Click"/>
+                <MenuItem Name="IzmenaTreninga" Header="IzmenaTreninga" Click="IzmenaTreninga_Click"/>
+                <MenuItem Name="BrisanjeTreninga" Header="BrisanjeTreninga" Click="BrisanjeTreninga_Click"/>
+                <Separator/>
+                <MenuItem Name="Profil" Header="Profil"/>
+            </MenuItem>
+        </Menu>
+        <DataGrid CanUserAddRows="false" Name="DGTreninzi" HorizontalAlignment="left" Height="189" VerticalAlignment="Top" Width="650" Margin="92,91,0,0"
+                  AutoGeneratingColumn="DGTreninzi_AutoGeneratingColumn">
+        </DataGrid>
+
+        <TextBox HorizontalAlignment="Left" Name="txtPretraga"  Height="23" Margin="646,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" PreviewKeyUp="txtPretraga_PreviewKeyUp"/>
+
+    </Grid>
+</Window>

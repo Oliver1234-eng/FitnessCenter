@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SR12_2020_POP2021.Prozori"
         mc:Ignorable="d"
-        Title="HomeWindow1" Height="450" Width="800">
+        Title="HomeWindow1" Height="450" Width="800" Name="WHome">
     <Grid>
         <Label Name="lblWelcome" Content="Dobro dosli!" />
         <Button Name="btnStart" Content="CRUD instruktori" Click="btnStart_Click" Margin="292,34,393.6,341" />

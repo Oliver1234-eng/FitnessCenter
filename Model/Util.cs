@@ -70,7 +70,7 @@ namespace SR12_2020_POP2021.Model
             korisnik1.JMBG = "121346";
             korisnik1.Lozinka = "peki";
             korisnik1.Pol = EPol.MUSKI;
-            korisnik1.TipKorisnika = ETipKorisnika.Administrator;
+            korisnik1.TipKorisnika = ETipKorisnika.ADMINISTRATOR;
             korisnik1.Sifra = "1";
             korisnik1.Ulica = "Ulica1";
             korisnik1.Broj = "1";
@@ -86,7 +86,7 @@ namespace SR12_2020_POP2021.Model
                 JMBG = "121346",
                 Lozinka = "zika",
                 Pol = EPol.ZENSKI,
-                TipKorisnika = ETipKorisnika.Instruktor,
+                TipKorisnika = ETipKorisnika.INSTRUKTOR,
                 Sifra = "2",
                 Ulica = "Ulica2",
                 Broj = "2",
@@ -103,7 +103,7 @@ namespace SR12_2020_POP2021.Model
                 JMBG = "847721",
                 Lozinka = "marko",
                 Pol = EPol.ZENSKI,
-                TipKorisnika = ETipKorisnika.Polaznik,
+                TipKorisnika = ETipKorisnika.POLAZNIK,
                 Sifra = "3",
                 Ulica = "Ulica3",
                 Broj = "3",

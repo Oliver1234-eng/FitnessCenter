@@ -1,4 +1,5 @@
 ﻿using SR12_2020_POP2021.Model;
+using SR12_2020_POP2021.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,39 +25,39 @@ namespace SR12_2020_POP2021.Prozori
         {
             InitializeComponent();
 
-            Podaci.Instanca.CitajEntitete("korisnici.txt");
-            Podaci.Instanca.CitajEntitete("instruktori.txt");
-            Podaci.Instanca.CitajEntitete("polaznici.txt");
-            Podaci.Instanca.CitajEntitete("administratori.txt");
-            Podaci.Instanca.CitajEntitete("treninzi.txt");
+            Util.Instance.CitanjeEntiteta("korisnici.txt");
+            Util.Instance.CitanjeEntiteta("instruktori.txt");
+            Util.Instance.CitanjeEntiteta("polaznici.txt");
+            Util.Instance.CitanjeEntiteta("administratori.txt");
+            Util.Instance.CitanjeEntiteta("treninzi.txt");
         }
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
-            InstruktoriWindow instruktoriWindow = new InstruktoriWindow();
+            AllInstructorsWindow allInstructorsWindow = new AllInstructorsWindow();
             this.Hide();
-            instruktoriWindow.Show();
+            allInstructorsWindow.Show();
         }
 
         private void btnPolaznici_Click(object sender, RoutedEventArgs e)
         {
-            PolazniciWindow polazniciWindow = new PolazniciWindow();
+            AllPolazniciWindow allPolazniciWindow = new AllPolazniciWindow();
             this.Hide();
-            polazniciWindow.Show();
+            allPolazniciWindow.Show();
         }
 
         private void btnAdministratori_Click(object sender, RoutedEventArgs e)
         {
-            AdministratoriWindow administratoriWindow = new AdministratoriWindow();
+            AllAdministratoriWindow allAdministratoriWindow = new AllAdministratoriWindow();
             this.Hide();
-            administratoriWindow.Show();
+            allAdministratoriWindow.Show();
         }
 
         private void btnTreninzi_Click(object sender, RoutedEventArgs e)
         {
-            TreninziWindow treninziWindow = new TreninziWindow();
+            AllTreninziWindow allTreninziWindow = new AllTreninziWindow();
             this.Hide();
-            treninziWindow.Show();
+            allTreninziWindow.Show();
         }
     }
 }

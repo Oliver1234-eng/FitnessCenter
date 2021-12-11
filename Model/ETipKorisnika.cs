@@ -8,9 +8,9 @@ namespace SR12_2020_POP2021.Model
 {
     public enum ETipKorisnika
     {
-        Administrator,
-        Instruktor,
-        Polaznik
+        ADMINISTRATOR,
+        INSTRUKTOR,
+        POLAZNIK
     }
 
 }
