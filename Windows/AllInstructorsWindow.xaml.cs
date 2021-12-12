@@ -42,6 +42,11 @@ namespace SR12_2020_POP2021.Windows
                 {
                     return korisnik.Ime.Contains(txtPretraga.Text);
                 }
+                if (txtPretragaPrezime.Text != "")
+                {
+                    return korisnik.Prezime.Contains(txtPretragaPrezime.Text);
+                }
+
                 else
                     return true;
             }
@@ -114,6 +119,11 @@ namespace SR12_2020_POP2021.Windows
         }
 
         private void txtPretraga_PreviewKeyUp(object sender, KeyEventArgs e)
+        {
+            view.Refresh();
+        }
+
+        private void txtPretragaPrezime_PreviewKeyUp(object sender, KeyEventArgs e)
         {
             view.Refresh();
         }

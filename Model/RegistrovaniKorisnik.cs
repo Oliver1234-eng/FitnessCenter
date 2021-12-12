@@ -54,7 +54,7 @@ namespace SR12_2020_POP2021.Model
                 {
                     if (Util.Instance.Korisnici.ToList().Exists(k => k.JMBG.Equals(value)))
                     {
-                        //throw new ArgumentException($"Jmbg must be unique");
+                        //throw new ArgumentException("Jmbg mora biti jedinstven!");
                     }
                 }
 
@@ -144,7 +144,7 @@ namespace SR12_2020_POP2021.Model
                         //if(Ime!=null && Ime.Equals(String.Empty))
                         if (string.IsNullOrEmpty(Ime))
                         {
-                            return "Unos imena je obavezno!";
+                            return "Unos podataka uokvirenih crvenim je obavezno!";
                         }
                         break;
 

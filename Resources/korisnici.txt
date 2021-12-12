@@ -1,9 +1,7 @@
 mika;Mikic;111111;MUSKI;mika@gmail.com;zika;INSTRUKTOR;2;Ulica2;2;Novi Sad;Srbija;True
-Peraaa;Peric;222222;MUSKI;pera@gmail.com;peki;ADMINISTRATOR;1;Ulica1;1;Novi Sad;Srbija;True
-markoo;Markic;333333;MUSKI;marko@gmail.com;marko;POLAZNIK;3;Ulica3;3;Novi Sad;Srbija;True
-probaInstruktorr;probaInstruktor;333333;MUSKI;proba@gmail.com;proba123;INSTRUKTOR;4;Ulica4;4;Novi Sad;Srbija;False
+Peraa;Peric;222222;MUSKI;pera@gmail.com;peki;ADMINISTRATOR;1;Ulica1;1;Novi Sad;Srbija;True
+markooo;Markic;333333;MUSKI;marko@gmail.com;marko;POLAZNIK;3;Ulica3;3;Novi Sad;Srbija;True
+probaInstruktorr;probaInstruktor;444333;MUSKI;proba@gmail.com;proba123;INSTRUKTOR;4;Ulica4;4;Novi Sad;Srbija;False
 probamoo;probamic;999888;ZENSKI;proba@gmail.com;probamo123;INSTRUKTOR;6;Ulica6;6;Novi Sad;Srbija;True
 probaPolaznikkk;probaPolaznik;444333;ZENSKI;probaPolaznik@gmail.com;probaPolaznik123;POLAZNIK;5;Ulica5;5;Novi Sad;Srbija;False
-opetProbamo;opetProbamo;333211;MUSKI;proba@gmail.com;1234;INSTRUKTOR;4;U4;4;Novi Sad;Srbija;True
-tryy;try;777666;MUSKI;try@gmail.com;try123;INSTRUKTOR;5;U5;5;Novi Sad;Srbija;False
-tryyy;try;777888;ZENSKI;tryy@gmail.com;try1234;POLAZNIK;6;U6;6;Novi Sad;Srbija;False
+opetProbamooo;opetProbamo;333211;MUSKI;proba@gmail.com;1234;INSTRUKTOR;4;U4;4;Novi Sad;Srbija;True

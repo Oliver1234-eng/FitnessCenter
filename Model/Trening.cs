@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 namespace SR12_2020_POP2021.Model
 {
     [Serializable]
-    public class Trening
+    public class Trening : IDataErrorInfo
     {
         private string _sifra;
 
@@ -73,6 +74,14 @@ namespace SR12_2020_POP2021.Model
             set { _aktivan = value; }
         }
 
+        public string Error
+        {
+            get
+            {
+                return "message";
+            }
+        }
+
         public string this[string columnName]
         {
             get
@@ -83,7 +92,7 @@ namespace SR12_2020_POP2021.Model
                         //if(Ime!=null && Ime.Equals(String.Empty))
                         if (string.IsNullOrEmpty(Sifra))
                         {
-                            return "Unos sifre je obavezno!";
+                            return "Unos podataka uokvirenih crvenim je obavezno!";
                         }
                         break;
 
@@ -128,6 +137,8 @@ namespace SR12_2020_POP2021.Model
             }
 
         }
+
+        public Trening() { }
         public override string ToString()
         {
             return "Sifra treninga: " + _sifra + ", instuktor koji drzi: " + _intruktor + ", polaznik: " + _polaznik;
