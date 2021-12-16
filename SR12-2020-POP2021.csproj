@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\EImenaInstruktora.cs" />
+    <Compile Include="Model\EImenaPolaznika.cs" />
     <Compile Include="Model\RegistrovaniKorisnik.cs" />
     <Compile Include="Model\Util.cs" />
     <Compile Include="MojiIzuzeci\TreningNotFoundException.cs" />

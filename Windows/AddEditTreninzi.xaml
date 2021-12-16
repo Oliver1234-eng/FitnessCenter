@@ -24,8 +24,16 @@
         </Grid.RowDefinitions>
 
         <Label Name="lblSifra" Content="Sifra: " Grid.Row="0" Grid.Column="0"/>
-        <TextBox Name="txtSifra" Grid.Row="0" Grid.Column="1" Text="{Binding Path=Sifra, ValidatesOnDataErrors=True}"/>
-        <TextBlock Text="{Binding ElementName=txtSifra, Path=(Validation.Errors)[0].ErrorContent}" Foreground="red"/>
+        <TextBox Name="txtSifra" Grid.Row="0" Grid.Column="1" Text="{Binding Path=Sifra, ValidatesOnExceptions=True, UpdateSourceTrigger=LostFocus}">
+            <Validation.ErrorTemplate>
+                <ControlTemplate>
+                    <StackPanel>
+                        <AdornedElementPlaceholder/>
+                        <TextBlock Text="{Binding [0].ErrorContent}" Foreground="Red"></TextBlock>
+                    </StackPanel>
+                </ControlTemplate>
+            </Validation.ErrorTemplate>
+        </TextBox>
 
 
         <Label Name="lblDatum" Content="Datum: " Grid.Row="1" Grid.Column="0"/>
@@ -43,13 +51,11 @@
         <Label Name="lblStatusTreninga" Content="Status treninga: " Grid.Row="4" Grid.Column="0"/>
         <ComboBox Grid.Column="1" Grid.Row="4" Name="ComboStatusTreninga" SelectedItem="{Binding Path=StatusTreninga}"/>
 
-        <Label Name="lblInstruktor" Content="Instruktor: " Grid.Row="5" Grid.Column="0"/>
-        <TextBox Name="txtInstruktor" Grid.Row="5" Grid.Column="1" Text="{Binding Path=Instruktor, ValidatesOnDataErrors=True}"/>
-        <TextBlock Text="{Binding ElementName=txtInstruktor, Path=(Validation.Errors)[4].ErrorContent}" Foreground="red"/>
+        <Label Name="lblInstruktor" Content="Ime instruktora: " Grid.Row="5" Grid.Column="0"/>
+        <ComboBox Grid.Column="1" Grid.Row="5" Name="ComboInstruktor" SelectedItem="{Binding Path=Instruktor}"/>
 
-        <Label Name="lblPolaznik" Content="Polaznik: " Grid.Row="6" Grid.Column="0"/>
-        <TextBox Name="txtPolaznik" Grid.Row="6" Grid.Column="1" Text="{Binding Path=Polaznik, ValidatesOnDataErrors=True}"/>
-        <TextBlock Text="{Binding ElementName=txtPolaznik, Path=(Validation.Errors)[5].ErrorContent}" Foreground="red"/>
+        <Label Name="lblPolaznik" Content="Ime polaznika: " Grid.Row="6" Grid.Column="0"/>
+        <ComboBox Grid.Column="1" Grid.Row="6" Name="ComboPolaznik" SelectedItem="{Binding Path=Polaznik}"/>
 
         <Button Name="btnCancel" Click="btnCancel_Click" Content="Cancel" Grid.Row="12" Grid.Column="0"/>
         <Button Name="btnOk" Click="btnOk_Click" Content="Ok" Grid.Row="12" Grid.Column="1"/>

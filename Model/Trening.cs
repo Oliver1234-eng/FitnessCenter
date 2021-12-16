@@ -15,7 +15,18 @@ namespace SR12_2020_POP2021.Model
         public string Sifra
         {
             get { return _sifra; }
-            set { _sifra = value; }
+            set
+            {
+                if (value != null)
+                {
+                    if (Util.Instance.Treninzi.ToList().Exists(t => t.Sifra.Equals(value)))
+                    {
+                        //throw new ArgumentException("Sifra treninga mora biti jedinstvena!");
+                    }
+                }
+
+                _sifra = value;
+            }
         }
 
         private string _datum;
@@ -50,17 +61,17 @@ namespace SR12_2020_POP2021.Model
             set { _statusTreninga = value; }
         }
 
-        private string _intruktor;
+        private EImenaInstruktora _intruktor;
 
-        public string Instruktor
+        public EImenaInstruktora Instruktor
         {
             get { return _intruktor; }
             set { _intruktor = value; }
         }
 
-        private string _polaznik;
+        private EImenaPolaznika _polaznik;
 
-        public string Polaznik
+        public EImenaPolaznika Polaznik
         {
             get { return _polaznik; }
             set { _polaznik = value; }
@@ -88,18 +99,11 @@ namespace SR12_2020_POP2021.Model
             {
                 switch (columnName)
                 {
-                    case "Sifra":
-                        //if(Ime!=null && Ime.Equals(String.Empty))
-                        if (string.IsNullOrEmpty(Sifra))
-                        {
-                            return "Unos podataka uokvirenih crvenim je obavezno!";
-                        }
-                        break;
 
                     case "Datum":
                         if (string.IsNullOrEmpty(Datum))
                         {
-                            return "Unos datuma je obavezno!";
+                            return "Unos podataka uokvirenih crvenim je obavezno!";
                         }
                         break;
 
@@ -117,7 +121,7 @@ namespace SR12_2020_POP2021.Model
                         }
                         break;
 
-                    case "Instruktor":
+                    /*case "Instruktor":
                         if (string.IsNullOrEmpty(Instruktor))
                         {
                             return "Unos instruktora je obavezno!";
@@ -129,7 +133,7 @@ namespace SR12_2020_POP2021.Model
                         {
                             return "Unos polaznika je obavezno!";
                         }
-                        break;
+                        break;*/
 
                 }
 

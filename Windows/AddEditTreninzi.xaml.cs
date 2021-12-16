@@ -30,6 +30,9 @@ namespace SR12_2020_POP2021.Windows
 
             this.DataContext = trening;
             ComboStatusTreninga.ItemsSource = Enum.GetValues(typeof(EStatusTreninga)).Cast<EStatusTreninga>();
+            ComboInstruktor.ItemsSource = Enum.GetValues(typeof(EImenaInstruktora)).Cast<EImenaInstruktora>();
+            ComboPolaznik.ItemsSource = Enum.GetValues(typeof(EImenaPolaznika)).Cast<EImenaPolaznika>();
+
 
             odabraniTrening = trening;
             odabraniStatus = status;
@@ -78,7 +81,7 @@ namespace SR12_2020_POP2021.Windows
         private bool IsValid()
         {
             return !Validation.GetHasError(txtSifra) && !Validation.GetHasError(txtDatum) && !Validation.GetHasError(txtVremePocetka)
-                && !Validation.GetHasError(txtTrajanje) && !Validation.GetHasError(txtInstruktor) && !Validation.GetHasError(txtPolaznik);
+                && !Validation.GetHasError(txtTrajanje);
         }
     }
 }

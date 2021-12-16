@@ -28,6 +28,8 @@ namespace SR12_2020_POP2021.Services
                     Enum.TryParse(TreningIzFajla[4], out EStatusTreninga statusTreninga);
                     //Instruktor instruktor = (Instruktor)Util.Instance.Instruktori.Where(i => i.Korisnik.Ime.Equals(TreningIzFajla[5]));
                     //Polaznik polaznik = (Polaznik)Util.Instance.Polaznici.Where(p => p.Korisnik.Ime.Equals(TreningIzFajla[6]));
+                    Enum.TryParse(TreningIzFajla[5], out EImenaInstruktora imenaInstruktora);
+                    Enum.TryParse(TreningIzFajla[6], out EImenaPolaznika imenaPolaznika);
 
                     Trening trening = new Trening
                     {
@@ -36,8 +38,8 @@ namespace SR12_2020_POP2021.Services
                         VremePocetka = TreningIzFajla[2],
                         Trajanje = TreningIzFajla[3],
                         StatusTreninga = statusTreninga,
-                        Instruktor = TreningIzFajla[5],
-                        Polaznik = TreningIzFajla[6],
+                        Instruktor = imenaInstruktora,
+                        Polaznik = imenaPolaznika,
                         Aktivan = true
                     };
                     Util.Instance.Treninzi.Add(trening);

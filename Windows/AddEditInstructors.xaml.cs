@@ -76,6 +76,11 @@ namespace SR12_2020_POP2021.Windows
                 this.DialogResult = true;
                 this.Close();
             }
+
+            //else
+            //{
+                //MessageBox.Show("Nesto nije u redu!");
+            //}
         }
 
         private bool IsValid()
