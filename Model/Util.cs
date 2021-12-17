@@ -19,6 +19,7 @@ namespace SR12_2020_POP2021.Model
         private IPolaznikService polaznikService;
         private IAdministratorService administratorService;
         private ITreningService treningService;
+        private IFitnesCentarService fitnesCentarService;
 
         private Util()
         {
@@ -27,6 +28,7 @@ namespace SR12_2020_POP2021.Model
             polaznikService = new PolaznikService();
             administratorService = new AdministratorService();
             treningService = new TreningService();
+            fitnesCentarService = new FitnesCentarService();
         }
 
         static Util() { }
@@ -44,6 +46,7 @@ namespace SR12_2020_POP2021.Model
         public ObservableCollection<Polaznik> Polaznici { get; set; }
         public ObservableCollection<Administrator> Administratori { get; set; }
         public ObservableCollection<Trening> Treninzi { get; set; }
+        public ObservableCollection<FitnesCentar> FitnesCentri { get; set; }
 
         public void Initialize()
         {
@@ -53,6 +56,7 @@ namespace SR12_2020_POP2021.Model
             Polaznici = new ObservableCollection<Polaznik>();
             Administratori = new ObservableCollection<Administrator>();
             Treninzi = new ObservableCollection<Trening>();
+            FitnesCentri = new ObservableCollection<FitnesCentar>();
 
             Adresa adresa = new Adresa
             {
@@ -157,6 +161,10 @@ namespace SR12_2020_POP2021.Model
             {
                 treningService.SaveWorkout(filename);
             }
+            else if (filename.Contains("fitnesCentri"))
+            {
+                fitnesCentarService.SaveFitnessCenter(filename);
+            }
         }
 
         public void CitanjeEntiteta(string filename)
@@ -180,6 +188,10 @@ namespace SR12_2020_POP2021.Model
             else if (filename.Contains("treninzi"))
             {
                 treningService.ReadWorkouts(filename);
+            }
+            else if (filename.Contains("fitnesCentri"))
+            {
+                fitnesCentarService.ReadFitnessCenter(filename);
             }
         }
 

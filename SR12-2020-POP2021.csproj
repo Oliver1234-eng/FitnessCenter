@@ -62,7 +62,9 @@
     <Compile Include="MojiIzuzeci\TreningNotFoundException.cs" />
     <Compile Include="MojiIzuzeci\UserNotFoundException.cs" />
     <Compile Include="Services\AdministratorService.cs" />
+    <Compile Include="Services\FitnesCentarService.cs" />
     <Compile Include="Services\IAdministratorService.cs" />
+    <Compile Include="Services\IFitnesCentarService.cs" />
     <Compile Include="Services\IInstruktorService.cs" />
     <Compile Include="Services\InstruktorService.cs" />
     <Compile Include="Services\IPolaznikService.cs" />
@@ -74,6 +76,9 @@
     <Compile Include="Validations\EmailValidation.cs" />
     <Compile Include="Windows\AddEditAdministratori.xaml.cs">
       <DependentUpon>AddEditAdministratori.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AddEditFitnesCentar.xaml.cs">
+      <DependentUpon>AddEditFitnesCentar.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\AddEditInstructors.xaml.cs">
       <DependentUpon>AddEditInstructors.xaml</DependentUpon>
@@ -87,6 +92,9 @@
     <Compile Include="Windows\AllAdministratoriWindow.xaml.cs">
       <DependentUpon>AllAdministratoriWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\AllFitnesCentarWindow.xaml.cs">
+      <DependentUpon>AllFitnesCentarWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AllInstructorsWindow.xaml.cs">
       <DependentUpon>AllInstructorsWindow.xaml</DependentUpon>
     </Compile>
@@ -96,8 +104,29 @@
     <Compile Include="Windows\AllTreninziWindow.xaml.cs">
       <DependentUpon>AllTreninziWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\HomeWindow1.xaml.cs">
-      <DependentUpon>HomeWindow1.xaml</DependentUpon>
+    <Compile Include="Windows\FormaZaRegistraciju.xaml.cs">
+      <DependentUpon>FormaZaRegistraciju.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\HomeWindow.xaml.cs">
+      <DependentUpon>HomeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\HomeWindowAdministrator.xaml.cs">
+      <DependentUpon>HomeWindowAdministrator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\HomeWindowNeregistrovaniKorisnik.xaml.cs">
+      <DependentUpon>HomeWindowNeregistrovaniKorisnik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\HomeWindowZaAdministratora.xaml.cs">
+      <DependentUpon>HomeWindowZaAdministratora.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\NeregistrovaniKorisnikInstruktori.xaml.cs">
+      <DependentUpon>NeregistrovaniKorisnikInstruktori.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\RegistracijaNeregistrovanogKorisnikaWindow.xaml.cs">
+      <DependentUpon>RegistracijaNeregistrovanogKorisnikaWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -112,6 +141,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Windows\AddEditAdministratori.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AddEditFitnesCentar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -131,6 +164,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\AllFitnesCentarWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\AllInstructorsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -143,7 +180,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\HomeWindow1.xaml">
+    <Page Include="Windows\FormaZaRegistraciju.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\HomeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\HomeWindowAdministrator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\HomeWindowNeregistrovaniKorisnik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\HomeWindowZaAdministratora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\NeregistrovaniKorisnikInstruktori.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\RegistracijaNeregistrovanogKorisnikaWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

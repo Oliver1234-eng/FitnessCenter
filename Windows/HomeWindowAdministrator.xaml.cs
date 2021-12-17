@@ -25,11 +25,6 @@ namespace SR12_2020_POP2021.Prozori
         {
             InitializeComponent();
 
-            Util.Instance.CitanjeEntiteta("korisnici.txt");
-            Util.Instance.CitanjeEntiteta("instruktori.txt");
-            Util.Instance.CitanjeEntiteta("polaznici.txt");
-            Util.Instance.CitanjeEntiteta("administratori.txt");
-            Util.Instance.CitanjeEntiteta("treninzi.txt");
         }
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
@@ -58,6 +53,13 @@ namespace SR12_2020_POP2021.Prozori
             AllTreninziWindow allTreninziWindow = new AllTreninziWindow();
             this.Hide();
             allTreninziWindow.Show();
+        }
+
+        private void btnFitnesCentri_Click(object sender, RoutedEventArgs e)
+        {
+            AllFitnesCentarWindow allFitnesCentarWindow = new AllFitnesCentarWindow();
+            this.Hide();
+            allFitnesCentarWindow.Show();
         }
     }
 }

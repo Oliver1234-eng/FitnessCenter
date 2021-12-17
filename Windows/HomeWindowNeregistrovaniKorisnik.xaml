@@ -1,0 +1,15 @@
+﻿<Window x:Class="SR12_2020_POP2021.Windows.HomeWindowNeregistrovaniKorisnik"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SR12_2020_POP2021.Windows"
+        mc:Ignorable="d"
+        Title="HomeWindowNeregistrovaniKorisnik" Height="450" Width="800">
+    <Grid>
+        <Button Content="Registracija" FontStyle="Italic" FontWeight="Bold" HorizontalAlignment="Left" Margin="268,87,0,0" Click="Button_Click" VerticalAlignment="Top" Width="202" Height="37"/>
+        <Button Content="Pregled podataka o fitnes centru" FontStyle="Italic" FontWeight="Bold" HorizontalAlignment="Left" Click="Button_Click_1" Margin="268,173,0,0" VerticalAlignment="Top" Width="202" Height="40"/>
+        <Button Content="Pregled podataka o instruktorima" FontStyle="Italic" FontWeight="Bold" HorizontalAlignment="Left" Click="Button_Click_2" Margin="268,272,0,0" VerticalAlignment="Top" Width="202" Height="35"/>
+        <Button Content="Povratak na pocetnu stranu" FontStyle="Italic" FontWeight="Bold" HorizontalAlignment="Left" Click="Button_Click_3" Margin="268,361,0,0" VerticalAlignment="Top" Width="202" Height="29"/>
+    </Grid>
+</Window>
