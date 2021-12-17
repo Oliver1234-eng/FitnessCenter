@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SR12_2020_POP2021.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,13 @@ namespace SR12_2020_POP2021.Windows
         public HomeWindowZaAdministratora()
         {
             InitializeComponent();
+
+            /*Util.Instance.CitanjeEntiteta("korisnici.txt");
+            Util.Instance.CitanjeEntiteta("instruktori.txt");
+            Util.Instance.CitanjeEntiteta("polaznici.txt");
+            Util.Instance.CitanjeEntiteta("administratori.txt");
+            Util.Instance.CitanjeEntiteta("treninzi.txt");
+            Util.Instance.CitanjeEntiteta("fitnesCentri.txt");*/
         }
 
         private void btnStart_Click(object sender, RoutedEventArgs e)

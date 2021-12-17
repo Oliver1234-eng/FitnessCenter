@@ -4,3 +4,4 @@ markooo;Markic;333333;MUSKI;marko@gmail.com;marko;POLAZNIK;3;Ulica3;3;Novi Sad;S
 1111111;ins2;ins2;MUSKI;ins2@gmail.com;ins123;INSTRUKTOR;6;U6;6;Novi Sad;Srbija;False
 ins22;ins2;777888;MUSKI;ins2@gmail.com;ins1234;INSTRUKTOR;7;u7;7;Novi Sad;Srbija;True
 mika;mikic;999898;MUSKI;mika@gmail.com;mika123;POLAZNIK;33;U33;33;Novi Sad;Srbija;True
+probaZbogNovinaa;probaZbogNovina;888787;ZENSKI;proba@gmail.com;novine123;INSTRUKTOR;65;U65;65;Novi Sad;Srbija;False
