@@ -89,6 +89,9 @@
     <Compile Include="Windows\AddEditTreninzi.xaml.cs">
       <DependentUpon>AddEditTreninzi.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\AddEditTreninziRezervisani.xaml.cs">
+      <DependentUpon>AddEditTreninziRezervisani.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AllAdministratoriWindow.xaml.cs">
       <DependentUpon>AllAdministratoriWindow.xaml</DependentUpon>
     </Compile>
@@ -100,6 +103,9 @@
     </Compile>
     <Compile Include="Windows\AllPolazniciWindow.xaml.cs">
       <DependentUpon>AllPolazniciWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AllTreninziRezervisaniWindow.xaml.cs">
+      <DependentUpon>AllTreninziRezervisaniWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\AllTreninziWindow.xaml.cs">
       <DependentUpon>AllTreninziWindow.xaml</DependentUpon>
@@ -160,6 +166,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\AddEditTreninziRezervisani.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\AllAdministratoriWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -173,6 +183,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\AllPolazniciWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AllTreninziRezervisaniWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

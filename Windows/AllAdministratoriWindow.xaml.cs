@@ -40,6 +40,32 @@ namespace SR12_2020_POP2021.Windows
                 {
                     return korisnik.Ime.Contains(txtPretraga.Text);
                 }
+
+                if (txtPretragaPrezime.Text != "")
+                {
+                    return korisnik.Prezime.Contains(txtPretragaPrezime.Text);
+                }
+
+                if (txtPretragaEmail.Text != "")
+                {
+                    return korisnik.Email.Contains(txtPretragaEmail.Text);
+                }
+
+                if (txtPretragaIdAdrese.Text != "")
+                {
+                    return korisnik.Sifra.Contains(txtPretragaIdAdrese.Text);
+                }
+
+                if (txtPretragaUlica.Text != "")
+                {
+                    return korisnik.Ulica.Contains(txtPretragaUlica.Text);
+                }
+
+                if (txtPretragaBroj.Text != "")
+                {
+                    return korisnik.Broj.Contains(txtPretragaBroj.Text);
+                }
+
                 else
                     return true;
             }
@@ -114,6 +140,39 @@ namespace SR12_2020_POP2021.Windows
         private void txtPretraga_PreviewKeyUp(object sender, KeyEventArgs e)
         {
             view.Refresh();
+        }
+
+        private void txtPretragaPrezime_PreviewKeyUp(object sender, KeyEventArgs e)
+        {
+            view.Refresh();
+        }
+
+        private void txtPretragaEmail_PreviewKeyUp(object sender, KeyEventArgs e)
+        {
+            view.Refresh();
+        }
+
+        private void txtPretragaIdAdrese_PreviewKeyUp(object sender, KeyEventArgs e)
+        {
+            view.Refresh();
+        }
+
+        private void txtPretragaUlica_PreviewKeyUp(object sender, KeyEventArgs e)
+        {
+            view.Refresh();
+        }
+
+        private void txtPretragaBroj_PreviewKeyUp(object sender, KeyEventArgs e)
+        {
+            view.Refresh();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            HomeWindowZaAdministratora homeWindowZaAdministratora = new HomeWindowZaAdministratora();
+            this.Hide();
+            homeWindowZaAdministratora.Show();
+
         }
     }
 }

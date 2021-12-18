@@ -1,0 +1,63 @@
+﻿<Window x:Class="SR12_2020_POP2021.Windows.AddEditTreninziRezervisani"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SR12_2020_POP2021.Windows"
+        mc:Ignorable="d"
+        Title="AddEditTreninziRezervisani" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Name="lblSifra" Content="Sifra: " Grid.Row="0" Grid.Column="0"/>
+        <TextBox Name="txtSifra" Grid.Row="0" Grid.Column="1" Text="{Binding Path=Sifra, ValidatesOnExceptions=True, UpdateSourceTrigger=LostFocus}">
+            <Validation.ErrorTemplate>
+                <ControlTemplate>
+                    <StackPanel>
+                        <AdornedElementPlaceholder/>
+                        <TextBlock Text="{Binding [0].ErrorContent}" Foreground="Red"></TextBlock>
+                    </StackPanel>
+                </ControlTemplate>
+            </Validation.ErrorTemplate>
+        </TextBox>
+
+
+        <Label Name="lblDatum" Content="Datum: " Grid.Row="1" Grid.Column="0"/>
+        <TextBox Name="txtDatum" Grid.Row="1" Grid.Column="1" Text="{Binding Path=Datum, ValidatesOnDataErrors=True}"/>
+        <TextBlock Text="{Binding ElementName=txtDatum, Path=(Validation.Errors)[1].ErrorContent}" Foreground="red"/>
+
+        <Label Name="lblVremePocetka" Content="Vreme pocetka: " Grid.Row="2" Grid.Column="0"/>
+        <TextBox Name="txtVremePocetka" Grid.Row="2" Grid.Column="1" Text="{Binding Path=VremePocetka, ValidatesOnDataErrors=True}" />
+        <TextBlock Text="{Binding ElementName=txtVremePocetka, Path=(Validation.Errors)[2].ErrorContent}" Foreground="red"/>
+
+        <Label Name="lblTrajanje" Content="Trajanje: " Grid.Row="3" Grid.Column="0"/>
+        <TextBox Name="txtTrajanje" Grid.Row="3" Grid.Column="1" Text="{Binding Path=Trajanje, ValidatesOnDataErrors=True}" />
+        <TextBlock Text="{Binding ElementName=txtTrajanje, Path=(Validation.Errors)[3].ErrorContent}" Foreground="red"/>
+
+        <Label Name="lblStatusTreninga" Content="Status treninga: " Grid.Row="4" Grid.Column="0"/>
+        <ComboBox Grid.Column="1" Grid.Row="4" Name="ComboStatusTreninga" SelectedItem="{Binding Path=StatusTreninga}"/>
+
+        <Label Name="lblInstruktor" Content="Ime instruktora: " Grid.Row="5" Grid.Column="0"/>
+        <ComboBox Grid.Column="1" Grid.Row="5" Name="ComboInstruktor" SelectedItem="{Binding Path=Instruktor}"/>
+
+        <Label Name="lblPolaznik" Content="Ime polaznika: " Grid.Row="6" Grid.Column="0"/>
+        <ComboBox Grid.Column="1" Grid.Row="6" Name="ComboPolaznik" SelectedItem="{Binding Path=Polaznik}"/>
+
+        <Button Name="btnCancel" Click="btnCancel_Click" Content="Cancel" Grid.Row="12" Grid.Column="0"/>
+        <Button Name="btnOk" Click="btnOk_Click" Content="Ok" Grid.Row="12" Grid.Column="1"/>
+    </Grid>
+</Window>

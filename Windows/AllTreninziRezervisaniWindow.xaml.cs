@@ -17,13 +17,13 @@ using System.Windows.Shapes;
 namespace SR12_2020_POP2021.Windows
 {
     /// <summary>
-    /// Interaction logic for AllTreninziWindow.xaml
+    /// Interaction logic for AllTreninziRezervisaniWindow.xaml
     /// </summary>
-    public partial class AllTreninziWindow : Window
+    public partial class AllTreninziRezervisaniWindow : Window
     {
         ICollectionView view;
 
-        public AllTreninziWindow()
+        public AllTreninziRezervisaniWindow()
         {
             InitializeComponent();
             UpdateView();
@@ -36,7 +36,7 @@ namespace SR12_2020_POP2021.Windows
             Trening trening = obj as Trening;
             //RegistrovaniKorisnik korisnik1 = (RegistrovaniKorisnik)obj ;
 
-            if (trening.StatusTreninga.Equals(EStatusTreninga.Slobodan) && trening.Aktivan)
+            if (trening.StatusTreninga.Equals(EStatusTreninga.Rezervisan) && trening.Aktivan)
             {
                 if (txtPretraga.Text != "")
                 {
@@ -63,9 +63,9 @@ namespace SR12_2020_POP2021.Windows
         private void DodavanjeTreninga_Click(object sender, RoutedEventArgs e)
         {
             Trening noviTrening = new Trening();
-            AddEditTreninzi addEditTreninzi = new AddEditTreninzi(noviTrening);
+            AddEditTreninziRezervisani addEditTreninziRezervisani = new AddEditTreninziRezervisani(noviTrening);
             this.Hide();
-            if (!(bool)addEditTreninzi.ShowDialog())
+            if (!(bool)addEditTreninziRezervisani.ShowDialog())
             {
 
             }
@@ -90,19 +90,6 @@ namespace SR12_2020_POP2021.Windows
             view.Refresh();
             DGTreninzi.SelectedItems.Clear();
 
-        }
-
-        private void BrisanjeTreninga_Click(object sender, RoutedEventArgs e)
-        {
-            Trening treningZaBrisanje = view.CurrentItem as Trening;
-            Util.Instance.DeleteWorkout(treningZaBrisanje.Sifra);
-
-            int index = Util.Instance.Treninzi.ToList().FindIndex(trening => trening.Sifra.Equals(treningZaBrisanje.Sifra));
-            Util.Instance.Treninzi[index].Aktivan = false;
-
-
-            UpdateView();
-            view.Refresh();
         }
 
         private void DGTreninzi_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)

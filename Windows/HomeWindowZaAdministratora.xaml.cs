@@ -24,12 +24,12 @@ namespace SR12_2020_POP2021.Windows
         {
             InitializeComponent();
 
-            /*Util.Instance.CitanjeEntiteta("korisnici.txt");
+            Util.Instance.CitanjeEntiteta("korisnici.txt");
             Util.Instance.CitanjeEntiteta("instruktori.txt");
             Util.Instance.CitanjeEntiteta("polaznici.txt");
             Util.Instance.CitanjeEntiteta("administratori.txt");
             Util.Instance.CitanjeEntiteta("treninzi.txt");
-            Util.Instance.CitanjeEntiteta("fitnesCentri.txt");*/
+            Util.Instance.CitanjeEntiteta("fitnesCentri.txt");
         }
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
@@ -65,6 +65,20 @@ namespace SR12_2020_POP2021.Windows
             AllFitnesCentarWindow allFitnesCentarWindow = new AllFitnesCentarWindow();
             this.Hide();
             allFitnesCentarWindow.Show();
+        }
+
+        private void btnOdjava_Click(object sender, RoutedEventArgs e)
+        {
+            LoginWindow loginWindow = new LoginWindow();
+            this.Hide();
+            loginWindow.Show();
+        }
+
+        private void btnTreninziRezervisani_Click_1(object sender, RoutedEventArgs e)
+        {
+            AllTreninziRezervisaniWindow allTreninziRezervisaniWindow = new AllTreninziRezervisaniWindow();
+            this.Hide();
+            allTreninziRezervisaniWindow.Show();
         }
     }
 }

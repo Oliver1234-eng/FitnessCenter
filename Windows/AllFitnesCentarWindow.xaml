@@ -15,5 +15,6 @@
                   AutoGeneratingColumn="DGFitnesCentar_AutoGeneratingColumn">
         </DataGrid>
         <Button Content="Nazad" FontStyle="Italic" FontWeight="Bold" HorizontalAlignment="Left" Height="36" Click="Button_Click" Margin="341,342,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label Content="Pregled opstih informacija o fitnes centru" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Height="58" Margin="235,17,0,0" VerticalAlignment="Top" Width="458"/>
     </Grid>
 </Window>

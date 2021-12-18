@@ -75,12 +75,13 @@ namespace SR12_2020_POP2021.Windows
 
                 this.DialogResult = true;
                 this.Close();
+                MessageBox.Show("Uspesno kreiran novi polaznik!");
             }
 
-            //else
-            //{
-            //MessageBox.Show("Nesto nije u redu!");
-            //}
+            else
+            {
+            MessageBox.Show("Nisu uneti svi podaci!");
+            }
         }
 
         private bool IsValid()

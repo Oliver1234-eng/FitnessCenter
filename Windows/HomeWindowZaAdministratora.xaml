@@ -11,7 +11,9 @@
         <Button Name="btnStart" Content="CRUD instruktori" Click="btnStart_Click" Margin="292,34,393.6,341" />
         <Button Name="btnPolaznici" Content="CRUD polaznici" Click="btnPolaznici_Click" Margin="292,118,393.6,258" />
         <Button Name="btnAdministratori" Content="CRUD administratori" Click="btnAdministratori_Click" Margin="292,200,393.6,174" />
-        <Button Name="btnTreninzi" Content="CRUD treninzi" Click="btnTreninzi_Click" Margin="292,274,393.6,101" />
-        <Button Name="btnFitnesCentri" Content="CRUD fitnes centar" Click="btnFitnesCentri_Click" Margin="292,339,393.6,40" />
+        <Button Name="btnTreninzi" Content="CRUD slobodni treninzi" Click="btnTreninzi_Click" Margin="501,73,152.6,302" />
+        <Button Name="btnTreninziRezervisani" Content="CRUD rezervisani treninzi" Click="btnTreninziRezervisani_Click_1" Margin="501,160,152.6,219" />
+        <Button Name="btnFitnesCentri" Content="CRUD fitnes centar" Click="btnFitnesCentri_Click" Margin="292,289,373.6,90" />
+        <Button Name="btnOdjava" Content="Odjava" Click="btnOdjava_Click" Margin="292,289,373.6,90" />
     </Grid>
 </Window>
