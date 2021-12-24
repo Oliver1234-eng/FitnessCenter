@@ -2,6 +2,7 @@
 2;DATUM22;VREME2;1h;Rezervisan;mika;zika;True
 3;DATUM3;VREME3;1h;Rezervisan;mika;zika;True
 4;DATUM44;VREME4;1h;Slobodan;Nema;Nema;True
-5;DATUM5;VREME5;1h;Slobodan;Nema;Nema;False
+5;DATUM5;VREME5;1h;Slobodan;Nema;Nema;True
 6;DATUM6;VREME6;1h;Rezervisan;mika;zika;True
-7;DATUM7;VREME7;1h;Rezervisan;mika;zika;True
+77;DATUM77;VREME77;1h;Rezervisan;mika;zika;True
+8;DATUM8;VREME8;1h;Slobodan;Nema;Nema;True

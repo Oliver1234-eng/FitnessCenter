@@ -75,6 +75,19 @@ namespace SR12_2020_POP2021.Model
             return Sifra + ";" + Naziv + ";" + SifraAdrese + ";" + Ulica + ";" + Broj + ";" + Grad + ";" + Drzava;
         }
 
+        public FitnesCentar Clone()
+        {
+            FitnesCentar kopija = new FitnesCentar();
+            kopija.Sifra = Sifra;
+            kopija.Naziv = Naziv;
+            kopija.SifraAdrese = SifraAdrese;
+            kopija.Ulica = Ulica;
+            kopija.Broj = Broj;
+            kopija.Grad = Grad;
+            kopija.Drzava = Drzava;
+
+            return kopija;
+        }
 
 
     }

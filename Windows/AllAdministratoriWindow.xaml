@@ -30,7 +30,11 @@
         <TextBox HorizontalAlignment="Left" Height="27" Margin="43,369,0,0" TextWrapping="Wrap" Text="" Name="txtPretragaIdAdrese" PreviewKeyUp="txtPretragaIdAdrese_PreviewKeyUp" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="27" Margin="205,369,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Name="txtPretragaUlica" PreviewKeyUp="txtPretragaUlica_PreviewKeyUp" Width="96"/>
         <TextBox HorizontalAlignment="Left" Height="27" Margin="359,369,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Name="txtPretragaBroj" PreviewKeyUp="txtPretragaBroj_PreviewKeyUp"  Width="106"/>
-        <Button Content="Nazad" FontWeight="Bold" FontStyle="Italic" Click="Button_Click" HorizontalAlignment="Left" Height="40" Margin="574,340,0,0" VerticalAlignment="Top" Width="88"/>
+        <Button Content="Nazad" FontWeight="Bold" FontStyle="Italic" Click="Button_Click" HorizontalAlignment="Left" Height="40" Margin="678,355,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label Content="Pretraga po gradu: " HorizontalAlignment="Left" Height="23" Margin="538,288,0,0" VerticalAlignment="Top" Width="117"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="538,311,0,0" TextWrapping="Wrap" Text="" Name="txtPretragaGrad" PreviewKeyUp="txtPretragaGrad_PreviewKeyUp" VerticalAlignment="Top" Width="117"/>
+        <Label Content="Pretraga po drzavi: " HorizontalAlignment="Left" Height="25" Margin="538,345,0,0" VerticalAlignment="Top" Width="117"/>
+        <TextBox HorizontalAlignment="Left" Height="16" Margin="538,369,0,0" TextWrapping="Wrap" Text="" Name="txtPretragaDrzava" PreviewKeyUp="txtPretragaDrzava_PreviewKeyUp" VerticalAlignment="Top" Width="117"/>
 
     </Grid>
 </Window>

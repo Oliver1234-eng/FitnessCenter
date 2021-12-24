@@ -6,5 +6,6 @@ ins2;ins2;777888;MUSKI;ins2@gmail.com;ins1234;INSTRUKTOR;7;u7;7;Novi Sad;Srbija;
 mika;mikic;999898;MUSKI;mika@gmail.com;mika123;POLAZNIK;33;U33;33;Novi Sad;Srbija;True
 probaZbogNovinaa;probaZbogNovina;888787;ZENSKI;proba@gmail.com;novine123;INSTRUKTOR;65;U65;65;Novi Sad;Srbija;False
 probaMessageBox;probic;888789;ZENSKI;probic@gmail.com;probic123;POLAZNIK;8;Ulica8;8;Novi Sad;Srbija;True
-PP;PP;666565;MUSKI;pp@gmail.com;pp123;POLAZNIK;9;U9;9;Novi Sad;Srbija;True
+PPP;PP;666565;MUSKI;pp@gmail.com;pp123;POLAZNIK;9;U9;9;Novi Sad;Srbija;False
 ins3;insic3;888000;ZENSKI;ins3@gmail.com;ins776;INSTRUKTOR;9;Ulica9;9;Novi Sad;Srbija;True
+PP;PP;888799;ZENSKI;ppp@gmail.com;ppp1234;POLAZNIK;66;u6;6;Novi Sad;Srbija;True

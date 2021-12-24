@@ -40,6 +40,7 @@ namespace SR12_2020_POP2021.Windows
             if (status.Equals(EStatus.IZMENI) && trening != null)
             {
                 this.Title = "Izmeni treninga";
+                //txtSifra.IsReadOnly = true;
 
             }
             else
@@ -71,10 +72,17 @@ namespace SR12_2020_POP2021.Windows
                     Util.Instance.Treninzi.Add(odabraniTrening);
                 }
 
+
                 Util.Instance.SacuvajEntitet("treninzi.txt");
 
                 this.DialogResult = true;
                 this.Close();
+                MessageBox.Show("Uspesno dodat/izmenjen trening!");
+            }
+
+            else
+            {
+                MessageBox.Show("Nisu uneti svi podaci!");
             }
         }
 

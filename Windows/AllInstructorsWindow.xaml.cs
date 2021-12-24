@@ -68,6 +68,16 @@ namespace SR12_2020_POP2021.Windows
                     return korisnik.Broj.Contains(txtPretragaBroj.Text);
                 }
 
+                if (txtPretragaGrad.Text != "")
+                {
+                    return korisnik.Grad.Contains(txtPretragaGrad.Text);
+                }
+
+                if (txtPretragaDrzava.Text != "")
+                {
+                    return korisnik.Drzava.Contains(txtPretragaDrzava.Text);
+                }
+
                 else
                     return true;
             }
@@ -175,6 +185,16 @@ namespace SR12_2020_POP2021.Windows
             this.Hide();
             homeWindowZaAdministratora.Show();
 
+        }
+
+        private void txtPretragaGrad_PreviewKeyUp(object sender, KeyEventArgs e)
+        {
+            view.Refresh();
+        }
+
+        private void txtPretragaDrzava_PreviewKeyUp(object sender, KeyEventArgs e)
+        {
+            view.Refresh();
         }
     }
 }
