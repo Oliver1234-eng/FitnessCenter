@@ -17,7 +17,7 @@
             </MenuItem>
         </Menu>
         <DataGrid CanUserAddRows="false" Name="DGInstruktori" HorizontalAlignment="left" Height="189" VerticalAlignment="Top" Width="650" Margin="92,91,0,0"
-                  AutoGeneratingColumn="DGInstruktori_AutoGeneratingColumn">
+                  AutoGeneratingColumn="DGInstruktori_AutoGeneratingColumn" CanUserSortColumns="True">
         </DataGrid>
 
         <TextBox HorizontalAlignment="Left" Name="txtPretraga"  Height="23" Margin="43,307,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" PreviewKeyUp="txtPretraga_PreviewKeyUp"/>

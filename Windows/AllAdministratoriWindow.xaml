@@ -17,7 +17,7 @@
             </MenuItem>
         </Menu>
         <DataGrid CanUserAddRows="false" Name="DGAdministratori" HorizontalAlignment="left" Height="189" VerticalAlignment="Top" Width="650" Margin="92,91,0,0"
-                  AutoGeneratingColumn="DGAdministratori_AutoGeneratingColumn"/>
+                  AutoGeneratingColumn="DGAdministratori_AutoGeneratingColumn" CanUserSortColumns="True"/>
         <TextBox HorizontalAlignment="Left" Name="txtPretraga"  Height="23" Margin="43,307,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" PreviewKeyUp="txtPretraga_PreviewKeyUp"/>
         <TextBox HorizontalAlignment="Left" Name="txtPretragaPrezime" Height="23" Margin="205,307,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" PreviewKeyUp="txtPretragaPrezime_PreviewKeyUp"/>
         <Label Content="Pretraga po imenu: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="43,281,0,0"/>
