@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="LoginWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Dobro dosli na stranicu za prijavu" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="229,35,0,0" Width="357"/>
+        <Button Content="Login administrator" HorizontalAlignment="Left" Height="51" Margin="298,155,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+        <Button Content="Login instruktor" HorizontalAlignment="Left" Height="45" Margin="298,237,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="120"/>
+        <Button Content="Login polaznik" HorizontalAlignment="Left" Height="37" Margin="298,316,0,0" VerticalAlignment="Top" Click="Button_Click_2" Width="120"/>
+        <Label Content="Odaberite tip korisnika:" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Height="41" Margin="266,67,0,0" VerticalAlignment="Top" Width="202"/>
+        <Button Content="Nazad" HorizontalAlignment="Left" FontStyle="Italic" FontWeight="Bold" Height="39" Margin="543,353,0,0" VerticalAlignment="Top" Click="Button_Click_3" Width="105"/>
+
     </Grid>
 </Window>

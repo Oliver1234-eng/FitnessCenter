@@ -125,8 +125,23 @@
     <Compile Include="Windows\HomeWindowZaAdministratora.xaml.cs">
       <DependentUpon>HomeWindowZaAdministratora.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\HomeWindowZaInstruktora.xaml.cs">
+      <DependentUpon>HomeWindowZaInstruktora.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\HomeWindowZaPolaznika.xaml.cs">
+      <DependentUpon>HomeWindowZaPolaznika.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\LoginWindowAdministrator.xaml.cs">
+      <DependentUpon>LoginWindowAdministrator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\LoginWindowInstruktor.xaml.cs">
+      <DependentUpon>LoginWindowInstruktor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\LoginWindowPolaznik.xaml.cs">
+      <DependentUpon>LoginWindowPolaznik.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\NeregistrovaniKorisnikInstruktori.xaml.cs">
       <DependentUpon>NeregistrovaniKorisnikInstruktori.xaml</DependentUpon>
@@ -214,7 +229,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\HomeWindowZaInstruktora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\HomeWindowZaPolaznika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\LoginWindowAdministrator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\LoginWindowInstruktor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\LoginWindowPolaznik.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

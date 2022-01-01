@@ -23,5 +23,33 @@ namespace SR12_2020_POP2021.Windows
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            LoginWindowAdministrator loginWindowAdministrator = new LoginWindowAdministrator();
+            this.Hide();
+            loginWindowAdministrator.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            LoginWindowInstruktor loginWindowInstruktor = new LoginWindowInstruktor();
+            this.Hide();
+            loginWindowInstruktor.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            LoginWindowPolaznik loginWindowPolaznik = new LoginWindowPolaznik();
+            this.Hide();
+            loginWindowPolaznik.Show();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            HomeWindow homeWindow = new HomeWindow();
+            this.Hide();
+            homeWindow.Show();
+        }
     }
 }

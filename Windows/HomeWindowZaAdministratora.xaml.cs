@@ -24,12 +24,12 @@ namespace SR12_2020_POP2021.Windows
         {
             InitializeComponent();
 
-            Util.Instance.CitanjeEntiteta("korisnici.txt");
+            /*Util.Instance.CitanjeEntiteta("korisnici.txt");
             Util.Instance.CitanjeEntiteta("instruktori.txt");
             Util.Instance.CitanjeEntiteta("polaznici.txt");
             Util.Instance.CitanjeEntiteta("administratori.txt");
             Util.Instance.CitanjeEntiteta("treninzi.txt");
-            Util.Instance.CitanjeEntiteta("fitnesCentri.txt");
+            Util.Instance.CitanjeEntiteta("fitnesCentri.txt");*/
         }
 
         private void btnStart_Click(object sender, RoutedEventArgs e)

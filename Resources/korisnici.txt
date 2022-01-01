@@ -5,8 +5,9 @@ markooo;Markic;333333;MUSKI;marko@gmail.com;marko;POLAZNIK;3;Ulica3;3;Novi Sad;S
 ins2;ins2;777888;MUSKI;ins2@gmail.com;ins1234;INSTRUKTOR;7;u7;7;Novi Sad;Srbija;True
 mika;mikic;999898;MUSKI;mika@gmail.com;mika123;POLAZNIK;33;U33;33;Novi Sad;Srbija;True
 probaZbogNovinaa;probaZbogNovina;888787;ZENSKI;proba@gmail.com;novine123;INSTRUKTOR;65;U65;65;Novi Sad;Srbija;False
-probaMessageBox;probic;888789;ZENSKI;probic@gmail.com;probic123;POLAZNIK;8;Ulica8;8;Novi Sad;Srbija;True
+probaMessageBox;probic;888789;ZENSKI;probic@gmail.com;probic123;POLAZNIK;8;Ulica8;8;Novi Sad;Srbija;False
 PPP;PP;666565;MUSKI;pp@gmail.com;pp123;POLAZNIK;9;U9;9;Novi Sad;Srbija;False
 ins3;insic3;888000;ZENSKI;ins3@gmail.com;ins776;INSTRUKTOR;9;Ulica9;9;Novi Sad;Srbija;False
-PP;PP;888799;ZENSKI;ppp@gmail.com;ppp1234;POLAZNIK;66;u6;6;Novi Sad;Srbija;True
-ins3;ins3;777667;ZENSKI;ins3@gmail.com;ins888;INSTRUKTOR;55;u5;5;Novi Sad;Srbija;True
+PP;PP;888799;ZENSKI;ppp@gmail.com;ppp1234;POLAZNIK;66;u6;6;Novi Sad;Srbija;False
+ins33;ins3;777667;ZENSKI;ins3@gmail.com;ins888;INSTRUKTOR;55;u5;5;Novi Sad;Srbija;True
+ins4;ins4;888798;ZENSKI;ins4@gmail.com;ins777;INSTRUKTOR;88;u8;8;Novi Sad;Srbija;False

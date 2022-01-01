@@ -4,5 +4,6 @@
 4;DATUM44;VREME4;1h;Slobodan;Nema;Nema;True
 5;DATUM5;VREME5;1h;Slobodan;Nema;Nema;True
 6;DATUM6;VREME6;1h;Rezervisan;mika;zika;True
-77;DATUM77;VREME77;1h;Rezervisan;mika;zika;True
-8;DATUM8;VREME8;1h;Slobodan;Nema;Nema;True
+77;DATUM77;VREME77;1h;Slobodan;Nema;Nema;True
+8;DATUM8;VREME8;1h;Slobodan;Nema;Nema;False
+99;20.06.2022.;16:00;1h;Slobodan;Nema;Nema;True

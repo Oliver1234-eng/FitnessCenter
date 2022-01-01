@@ -11,8 +11,7 @@
             <MenuItem Name="MITrening" Header="Treninzi">
                 <MenuItem Name="DodavanjeTreninga" Header="DodavanjeTreninga" Click="DodavanjeTreninga_Click"/>
                 <MenuItem Name="IzmenaTreninga" Header="IzmenaTreninga" Click="IzmenaTreninga_Click"/>
-                <Separator/>
-                <MenuItem Name="Profil" Header="Profil"/>
+                <MenuItem Name="BrisanjeTreninga" Header="BrisanjeTreninga" Click="BrisanjeTreninga_Click"/>
             </MenuItem>
         </Menu>
         <DataGrid CanUserAddRows="false" Name="DGTreninzi" HorizontalAlignment="left" Height="189" VerticalAlignment="Top" Width="650" Margin="92,91,0,0"

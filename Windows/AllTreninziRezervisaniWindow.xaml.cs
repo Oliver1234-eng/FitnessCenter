@@ -92,6 +92,19 @@ namespace SR12_2020_POP2021.Windows
 
         }
 
+        private void BrisanjeTreninga_Click(object sender, RoutedEventArgs e)
+        {
+            Trening treningZaBrisanje = view.CurrentItem as Trening;
+            Util.Instance.DeleteWorkout(treningZaBrisanje.Sifra);
+
+            int index = Util.Instance.Treninzi.ToList().FindIndex(trening => trening.Sifra.Equals(treningZaBrisanje.Sifra));
+            Util.Instance.Treninzi[index].Aktivan = false;
+
+
+            UpdateView();
+            view.Refresh();
+        }
+
         private void DGTreninzi_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
         {
             if (e.PropertyName.Equals("Aktivan") || e.PropertyName.Equals("Error"))
