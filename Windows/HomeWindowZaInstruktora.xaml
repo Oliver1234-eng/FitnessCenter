@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="HomeWindowZaInstruktora" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Odjava" FontSize="16" FontWeight="Bold" Name="btnOdjava" Click="btnOdjava_Click" HorizontalAlignment="Left" Height="45" Margin="584,344,0,0" VerticalAlignment="Top" Width="93"/>
+        <Button Content="Pregled licnih podataka" Name="btnPregledLicnihPodataka" Click="btnPregledLicnihPodataka_Click" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Height="43" Margin="205,52,0,0" VerticalAlignment="Top" Width="213"/>
+
     </Grid>
 </Window>

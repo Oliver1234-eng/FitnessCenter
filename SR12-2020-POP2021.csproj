@@ -146,6 +146,12 @@
     <Compile Include="Windows\NeregistrovaniKorisnikInstruktori.xaml.cs">
       <DependentUpon>NeregistrovaniKorisnikInstruktori.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\PregledLicnihPodatakaInstruktorWindow.xaml.cs">
+      <DependentUpon>PregledLicnihPodatakaInstruktorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\PregledLicnihPodatakaPolaznikWindow.xaml.cs">
+      <DependentUpon>PregledLicnihPodatakaPolaznikWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\RegistracijaNeregistrovanogKorisnikaWindow.xaml.cs">
       <DependentUpon>RegistracijaNeregistrovanogKorisnikaWindow.xaml</DependentUpon>
     </Compile>
@@ -254,6 +260,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\NeregistrovaniKorisnikInstruktori.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PregledLicnihPodatakaInstruktorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PregledLicnihPodatakaPolaznikWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

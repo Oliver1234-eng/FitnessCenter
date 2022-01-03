@@ -1,9 +1,9 @@
-1;DATUM1;VREME1;1h;Slobodan;Nema;Nema;True
-2;DATUM22;VREME2;1h;Rezervisan;mika;zika;True
-3;DATUM3;VREME3;1h;Rezervisan;mika;zika;True
-4;DATUM44;VREME4;1h;Slobodan;Nema;Nema;True
-5;DATUM5;VREME5;1h;Slobodan;Nema;Nema;True
-6;DATUM6;VREME6;1h;Rezervisan;mika;zika;True
-77;DATUM77;VREME77;1h;Slobodan;Nema;Nema;True
-8;DATUM8;VREME8;1h;Slobodan;Nema;Nema;False
+1;16.06.2022.;16h;1h;Slobodan;Nema;Nema;True
+2;22.06.2022.;16h;1h;Rezervisan;mika;zika;True
+3;23.06.2022.;16h;1h;Rezervisan;mika;zika;True
+4;17.06.2022.;16h;1h;Slobodan;Nema;Nema;True
+5;18.06.2022.;16h;1h;Slobodan;Nema;Nema;True
+6;24.06.2022.;16h;1h;Rezervisan;mika;zika;True
+77;19.06.2022.;16h;1h;Slobodan;Nema;Nema;True
+8;21.06.2022.;16h;1h;Slobodan;Nema;Nema;True
 99;20.06.2022.;16:00;1h;Slobodan;Nema;Nema;True

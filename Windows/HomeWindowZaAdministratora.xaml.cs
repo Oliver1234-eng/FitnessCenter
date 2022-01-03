@@ -80,5 +80,12 @@ namespace SR12_2020_POP2021.Windows
             this.Hide();
             allTreninziRezervisaniWindow.Show();
         }
+
+        private void btnPregledLicnihPodataka_Click(object sender, RoutedEventArgs e)
+        {
+            AllAdministratoriWindow allAdministratoriWindow = new AllAdministratoriWindow();
+            this.Hide();
+            allAdministratoriWindow.Show();
+        }
     }
 }

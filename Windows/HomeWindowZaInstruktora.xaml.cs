@@ -23,5 +23,19 @@ namespace SR12_2020_POP2021.Windows
         {
             InitializeComponent();
         }
+
+        private void btnOdjava_Click(object sender, RoutedEventArgs e)
+        {
+            LoginWindow loginWindow = new LoginWindow();
+            this.Hide();
+            loginWindow.Show();
+        }
+
+        private void btnPregledLicnihPodataka_Click(object sender, RoutedEventArgs e)
+        {
+            PregledLicnihPodatakaInstruktorWindow pregledLicnihPodatakaInstruktorWindow = new PregledLicnihPodatakaInstruktorWindow();
+            this.Hide();
+            pregledLicnihPodatakaInstruktorWindow.Show();
+        }
     }
 }

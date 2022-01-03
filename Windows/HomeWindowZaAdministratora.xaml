@@ -8,12 +8,13 @@
         Title="HomeWindowZaAdministratora" Height="450" Width="800">
     <Grid>
         <Label Name="lblWelcome" Content="Dobro dosli!" Margin="0,10,-0.4,-10" />
-        <Button Name="btnStart" Content="CRUD instruktori" Click="btnStart_Click" Margin="292,34,393.6,341" />
-        <Button Name="btnPolaznici" Content="CRUD polaznici" Click="btnPolaznici_Click" Margin="292,118,393.6,258" />
-        <Button Name="btnAdministratori" Content="CRUD administratori" Click="btnAdministratori_Click" Margin="292,200,393.6,174" />
-        <Button Name="btnTreninzi" Content="CRUD slobodni treninzi" Click="btnTreninzi_Click" Margin="501,73,152.6,302" />
-        <Button Name="btnTreninziRezervisani" Content="CRUD rezervisani treninzi" Click="btnTreninziRezervisani_Click_1" Margin="501,160,152.6,219" />
-        <Button Name="btnFitnesCentri" Content="CRUD fitnes centar" Click="btnFitnesCentri_Click" Margin="292,289,373.6,90" />
-        <Button Name="btnOdjava" Content="Odjava" Click="btnOdjava_Click" Margin="292,289,373.6,90" />
+        <Button Name="btnStart" Content="CRUD instruktori" FontSize="16" FontWeight="Bold" Click="btnStart_Click" Margin="241,35,373.6,341" />
+        <Button Name="btnPolaznici" Content="CRUD polaznici" Click="btnPolaznici_Click" FontSize="16" FontWeight="Bold" Margin="241,117,373.6,258" />
+        <Button Name="btnAdministratori" Content="CRUD administratori" FontSize="16" FontWeight="Bold" Click="btnAdministratori_Click" Margin="241,196,373.6,174" />
+        <Button Name="btnTreninzi" Content="CRUD slobodni treninzi" FontSize="16" FontWeight="Bold" Click="btnTreninzi_Click" Margin="554,34,39.6,341" />
+        <Button Name="btnTreninziRezervisani" Content="CRUD rezervisani treninzi" FontSize="16" FontWeight="Bold" Click="btnTreninziRezervisani_Click_1" Margin="554,121,39.6,258" />
+        <Button Name="btnFitnesCentri" Content="CRUD fitnes centar" FontSize="16" FontWeight="Bold" Click="btnFitnesCentri_Click" Margin="241,270,373.6,109" />
+        <Button Name="btnPregledLicnihPodataka" Content="Pregled licnih podataka" FontSize="16" FontWeight="Bold" Click="btnPregledLicnihPodataka_Click" Margin="241,335,373.6,44" />
+        <Button Name="btnOdjava" Content="Odjava" Click="btnOdjava_Click" FontSize="16" FontWeight="Bold" Margin="610,320,79.6,44" />
     </Grid>
 </Window>
