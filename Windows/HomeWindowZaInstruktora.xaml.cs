@@ -37,5 +37,26 @@ namespace SR12_2020_POP2021.Windows
             this.Hide();
             pregledLicnihPodatakaInstruktorWindow.Show();
         }
+
+        private void btnPregledSvojihTreninga_Click(object sender, RoutedEventArgs e)
+        {
+            PregledSvojihTreningaInstruktorWindow pregledSvojihTreningaInstruktorWindow = new PregledSvojihTreningaInstruktorWindow();
+            this.Hide();
+            pregledSvojihTreningaInstruktorWindow.Show();
+        }
+
+        private void btnPregledSvojihTreningaRezervisanih_Click(object sender, RoutedEventArgs e)
+        {
+            PregledSvojihTreningaRezervisanihInstruktorWindow pregledSvojihTreningaRezervisanihInstruktorWindow = new PregledSvojihTreningaRezervisanihInstruktorWindow();
+            this.Hide();
+            pregledSvojihTreningaRezervisanihInstruktorWindow.Show();
+        }
+
+        private void btnPregledPolaznika_Click(object sender, RoutedEventArgs e)
+        {
+            PregledPolaznikaInstruktorWindow pregledPolaznikaInstruktorWindow = new PregledPolaznikaInstruktorWindow();
+            this.Hide();
+            pregledPolaznikaInstruktorWindow.Show();
+        }
     }
 }

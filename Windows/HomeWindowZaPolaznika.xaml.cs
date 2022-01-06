@@ -37,5 +37,6 @@ namespace SR12_2020_POP2021.Windows
             this.Hide();
             pregledLicnihPodatakaPolaznikWindow.Show();
         }
+
     }
 }

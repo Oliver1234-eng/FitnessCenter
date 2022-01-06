@@ -152,6 +152,15 @@
     <Compile Include="Windows\PregledLicnihPodatakaPolaznikWindow.xaml.cs">
       <DependentUpon>PregledLicnihPodatakaPolaznikWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\PregledPolaznikaInstruktorWindow.xaml.cs">
+      <DependentUpon>PregledPolaznikaInstruktorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\PregledSvojihTreningaInstruktorWindow.xaml.cs">
+      <DependentUpon>PregledSvojihTreningaInstruktorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\PregledSvojihTreningaRezervisanihInstruktorWindow.xaml.cs">
+      <DependentUpon>PregledSvojihTreningaRezervisanihInstruktorWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\RegistracijaNeregistrovanogKorisnikaWindow.xaml.cs">
       <DependentUpon>RegistracijaNeregistrovanogKorisnikaWindow.xaml</DependentUpon>
     </Compile>
@@ -268,6 +277,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\PregledLicnihPodatakaPolaznikWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PregledPolaznikaInstruktorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PregledSvojihTreningaInstruktorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PregledSvojihTreningaRezervisanihInstruktorWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

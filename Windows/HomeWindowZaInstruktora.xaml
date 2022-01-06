@@ -9,6 +9,9 @@
     <Grid>
         <Button Content="Odjava" FontSize="16" FontWeight="Bold" Name="btnOdjava" Click="btnOdjava_Click" HorizontalAlignment="Left" Height="45" Margin="584,344,0,0" VerticalAlignment="Top" Width="93"/>
         <Button Content="Pregled licnih podataka" Name="btnPregledLicnihPodataka" Click="btnPregledLicnihPodataka_Click" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Height="43" Margin="205,52,0,0" VerticalAlignment="Top" Width="213"/>
+        <Button Content="Pregled svojih slobodnih treninga" Name="btnPregledSvojihTreninga" Click="btnPregledSvojihTreninga_Click" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Height="48" Margin="205,131,0,0" VerticalAlignment="Top" Width="290"/>
+        <Button Content="Pregled svojih rezervisanih treninga" Name="btnPregledSvojihTreningaRezervisanih" Click="btnPregledSvojihTreningaRezervisanih_Click" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Height="52" Margin="205,227,0,0" VerticalAlignment="Top" Width="274"/>
+        <Button Content="Pregled polaznika" FontSize="16" FontWeight="Bold" Name="btnPregledPolaznika" Click="btnPregledPolaznika_Click" HorizontalAlignment="Left" Height="43" Margin="205,324,0,0" VerticalAlignment="Top" Width="155"/>
 
     </Grid>
 </Window>
