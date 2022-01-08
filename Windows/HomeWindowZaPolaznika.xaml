@@ -11,6 +11,9 @@
         <Button Content="Pregled licnih podataka" Name="btnPregledLicnihPodataka" Click="btnPregledLicnihPodataka_Click" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Height="43" Margin="205,52,0,0" VerticalAlignment="Top" Width="213"/>
         <Button Content="Rezervisi trening" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Height="45" Margin="205,145,0,0" VerticalAlignment="Top" Name="btnRezervacijaTreninga" Click="btnRezervacijaTreninga_Click" Width="213"/>
         <Button Content="Otkazi trening" FontSize="16" FontWeight="Bold" Name="btnOtkaziTrening" Click="btnOtkaziTrening_Click" HorizontalAlignment="Left" Height="45" Margin="205,226,0,0" VerticalAlignment="Top" Width="213"/>
+        <Button Content="Pogledaj treninge za instruktora: mika" FontSize="16" FontWeight="Bold" Name="btnInstruktorMika" Click="btnInstruktorMika_Click" HorizontalAlignment="Left" Height="43" Margin="478,52,0,0" VerticalAlignment="Top" Width="289"/>
+        <Button Content="Pogledaj treninga za instruktora: ins2" FontSize="16" FontWeight="Bold" Name="btnInstruktorIns2" Click="btnInstruktorIns2_Click" HorizontalAlignment="Left" Height="45" Margin="478,145,0,0" VerticalAlignment="Top" Width="289"/>
+        <Button Content="Pogledaj treninge za instruktora: ins3" FontSize="16" FontWeight="Bold" Name="btnInstruktorIns3" Click="btnInstruktorIns3_Click" HorizontalAlignment="Left" Height="45" Margin="478,226,0,0" VerticalAlignment="Top" Width="289"/>
 
     </Grid>
 </Window>

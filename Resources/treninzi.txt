@@ -10,3 +10,4 @@
 44;28.06.2022.;16h;1h;Slobodan;mika;Nema;True
 55;30.06.2022.;16:00;1h;Rezervisan;mika;markooo;True
 66;27.6.2022.;16:00;1h;Slobodan;mika;Nema;True
+88;26.6.2022.;16h;1h;Rezervisan;mika;markooo;True

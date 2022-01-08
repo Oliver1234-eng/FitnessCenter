@@ -173,6 +173,15 @@
     <Compile Include="Windows\RezervacijaTreningaPolaznikWindow.xaml.cs">
       <DependentUpon>RezervacijaTreningaPolaznikWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\TreninziInstruktorIns2PolaznikWindow.xaml.cs">
+      <DependentUpon>TreninziInstruktorIns2PolaznikWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\TreninziInstruktorIns3PolaznikWindow.xaml.cs">
+      <DependentUpon>TreninziInstruktorIns3PolaznikWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\TreninziInstruktorMikaPolaznikWindow.xaml.cs">
+      <DependentUpon>TreninziInstruktorMikaPolaznikWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -314,6 +323,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\RezervacijaTreningaPolaznikWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\TreninziInstruktorIns2PolaznikWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\TreninziInstruktorIns3PolaznikWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\TreninziInstruktorMikaPolaznikWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

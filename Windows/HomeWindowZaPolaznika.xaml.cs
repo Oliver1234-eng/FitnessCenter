@@ -51,5 +51,26 @@ namespace SR12_2020_POP2021.Windows
             this.Hide();
             otkazivanjeTreningaPolaznikWindow.Show();
         }
+
+        private void btnInstruktorMika_Click(object sender, RoutedEventArgs e)
+        {
+            TreninziInstruktorMikaPolaznikWindow treninziInstruktorMikaPolaznikWindow = new TreninziInstruktorMikaPolaznikWindow();
+            this.Hide();
+            treninziInstruktorMikaPolaznikWindow.Show();
+        }
+
+        private void btnInstruktorIns2_Click(object sender, RoutedEventArgs e)
+        {
+            TreninziInstruktorIns2PolaznikWindow treninziInstruktorIns2PolaznikWindow = new TreninziInstruktorIns2PolaznikWindow();
+            this.Hide();
+            treninziInstruktorIns2PolaznikWindow.Show();
+        }
+
+        private void btnInstruktorIns3_Click(object sender, RoutedEventArgs e)
+        {
+            TreninziInstruktorIns3PolaznikWindow treninziInstruktorIns3PolaznikWindow = new TreninziInstruktorIns3PolaznikWindow();
+            this.Hide();
+            treninziInstruktorIns3PolaznikWindow.Show();
+        }
     }
 }
