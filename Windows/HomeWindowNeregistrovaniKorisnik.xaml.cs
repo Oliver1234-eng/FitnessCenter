@@ -33,9 +33,9 @@ namespace SR12_2020_POP2021.Windows
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            AllFitnesCentarWindow allfitnesCentarWindow = new AllFitnesCentarWindow();
+            FitnesCentarPodaciZaNeregistrovanogKorisnika fitnesCentarPodaciZaNeregistrovanogKorisnika = new FitnesCentarPodaciZaNeregistrovanogKorisnika();
             this.Hide();
-            allfitnesCentarWindow.Show();
+            fitnesCentarPodaciZaNeregistrovanogKorisnika.Show();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)

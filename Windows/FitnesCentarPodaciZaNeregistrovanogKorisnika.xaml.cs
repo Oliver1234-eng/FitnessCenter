@@ -17,12 +17,12 @@ using System.Windows.Shapes;
 namespace SR12_2020_POP2021.Windows
 {
     /// <summary>
-    /// Interaction logic for AllFitnesCentarWindow.xaml
+    /// Interaction logic for FitnesCentarPodaciZaNeregistrovanogKorisnika.xaml
     /// </summary>
-    public partial class AllFitnesCentarWindow : Window
+    public partial class FitnesCentarPodaciZaNeregistrovanogKorisnika : Window
     {
         ICollectionView view;
-        public AllFitnesCentarWindow()
+        public FitnesCentarPodaciZaNeregistrovanogKorisnika()
         {
             InitializeComponent();
             UpdateView();
@@ -41,26 +41,6 @@ namespace SR12_2020_POP2021.Windows
             DGFitnesCentar.SelectedItems.Clear();
         }
 
-        private void IzmenaPodataka_Click(object sender, RoutedEventArgs e)
-        {
-            FitnesCentar selectedFitnesCentar = view.CurrentItem as FitnesCentar;
-
-            FitnesCentar stariFitnesCentar = selectedFitnesCentar.Clone();
-
-            AddEditFitnesCentar addEditFitnesCentar = new AddEditFitnesCentar(selectedFitnesCentar, EStatus.IZMENI);
-            this.Hide();
-            if (!(bool)addEditFitnesCentar.ShowDialog())
-            {
-                int index = Util.Instance.FitnesCentri.ToList().FindIndex(f => f.Sifra.Equals(stariFitnesCentar.Sifra));
-                Util.Instance.FitnesCentri[index] = stariFitnesCentar;
-            }
-            this.Show();
-
-            view.Refresh();
-            DGFitnesCentar.SelectedItems.Clear();
-
-        }
-
         private void DGFitnesCentar_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
         {
             if (e.PropertyName.Equals("Aktivan") || e.PropertyName.Equals("Error"))
@@ -71,10 +51,9 @@ namespace SR12_2020_POP2021.Windows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            HomeWindowZaAdministratora homeWindowAdministrator = new HomeWindowZaAdministratora();
+            HomeWindowNeregistrovaniKorisnik homeWindowNeregistrovaniKorisnik = new HomeWindowNeregistrovaniKorisnik();
             this.Hide();
-            homeWindowAdministrator.Show();
+            homeWindowNeregistrovaniKorisnik.Show();
         }
-
     }
 }

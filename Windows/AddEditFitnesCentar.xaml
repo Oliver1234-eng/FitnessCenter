@@ -7,6 +7,51 @@
         mc:Ignorable="d"
         Title="AddEditFitnesCentar" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Name="lblSifra" Content="Sifra: " Grid.Row="0" Grid.Column="0"/>
+        <TextBox Name="txtSifra" Grid.Row="0" Grid.Column="1" Text="{Binding Path=Sifra, ValidatesOnExceptions=True, UpdateSourceTrigger=LostFocus}" />
+        <TextBlock Text="{Binding ElementName=txtSifra, Path=(Validation.Errors)[0].ErrorContent}" Foreground="red"/>
         
+        <Label Name="lblNaziv" Content="Naziv: " Grid.Row="1" Grid.Column="0"/>
+        <TextBox Name="txtNaziv" Grid.Row="1" Grid.Column="1" Text="{Binding Path=Naziv, ValidatesOnDataErrors=True}"/>
+        <TextBlock Text="{Binding ElementName=txtNaziv, Path=(Validation.Errors)[1].ErrorContent}" Foreground="red"/>
+
+        <Label Name="lblSifraAdrese" Content="Sifra adrese: " Grid.Row="2" Grid.Column="0"/>
+        <TextBox Name="txtSifraAdrese" Grid.Row="2" Grid.Column="1" Text="{Binding Path=SifraAdrese, ValidatesOnDataErrors=True}" />
+        <TextBlock Text="{Binding ElementName=txtSifraAdrese, Path=(Validation.Errors)[2].ErrorContent}" Foreground="red"/>
+
+        <Label Name="lblUlica" Content="Ulica: " Grid.Row="3" Grid.Column="0"/>
+        <TextBox Name="txtUlica" Grid.Row="3" Grid.Column="1" Text="{Binding Path=Ulica, ValidatesOnDataErrors=True}" />
+        <TextBlock Text="{Binding ElementName=txtUlica, Path=(Validation.Errors)[3].ErrorContent}" Foreground="red"/>
+
+        <Label Name="lblBroj" Content="Broj: " Grid.Row="4" Grid.Column="0"/>
+        <TextBox Name="txtBroj" Grid.Row="4" Grid.Column="1" Text="{Binding Path=Broj, ValidatesOnDataErrors=True}" />
+        <TextBlock Text="{Binding ElementName=txtBroj, Path=(Validation.Errors)[4].ErrorContent}" Foreground="red"/>
+
+        <Label Name="lblGrad" Content="Grad: " Grid.Row="5" Grid.Column="0"/>
+        <TextBox Name="txtGrad" Grid.Row="5" Grid.Column="1" Text="{Binding Path=Grad, ValidatesOnDataErrors=True}" />
+        <TextBlock Text="{Binding ElementName=txtGrad, Path=(Validation.Errors)[5].ErrorContent}" Foreground="red"/>
+
+        <Label Name="lblDrzava" Content="Drzava: " Grid.Row="6" Grid.Column="0"/>
+        <TextBox Name="txtDrzava" Grid.Row="6" Grid.Column="1" Text="{Binding Path=Drzava, ValidatesOnDataErrors=True}" />
+        <TextBlock Text="{Binding ElementName=txtDrzava, Path=(Validation.Errors)[6].ErrorContent}" Foreground="red"/>
+
+        <Button Name="btnCancel" Click="btnCancel_Click" Content="Cancel" Grid.Row="12" Grid.Column="0"/>
+        <Button Name="btnOk" Click="btnOk_Click" Content="Ok" Grid.Row="12" Grid.Column="1"/>
     </Grid>
 </Window>

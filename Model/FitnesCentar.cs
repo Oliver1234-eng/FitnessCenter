@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 namespace SR12_2020_POP2021.Model
 {
     [Serializable]
-    public class FitnesCentar
+    public class FitnesCentar : IDataErrorInfo
     {
         private string _sifra;
 
@@ -65,6 +66,76 @@ namespace SR12_2020_POP2021.Model
             set { _drzava = value; }
         }
 
+        public string Error
+        {
+            get
+            {
+                return "message";
+            }
+        }
+
+        public string this[string columnName]
+        {
+            get
+            {
+                switch (columnName)
+                {
+
+                    case "Sifra":
+                        if (string.IsNullOrEmpty(Sifra))
+                        {
+                            return "Unos podataka uokvirenih crvenim je obavezno!";
+                        }
+                        break;
+
+                    case "Naziv":
+                        if (string.IsNullOrEmpty(Naziv))
+                        {
+                            return "Unos naziva je obavezno!";
+                        }
+                        break;
+
+                    case "Sifra adrese":
+                        if (string.IsNullOrEmpty(SifraAdrese))
+                        {
+                            return "Unos sifre adrese je obavezno!";
+                        }
+                        break;
+
+                    case "Ulica":
+                        if (string.IsNullOrEmpty(Ulica))
+                        {
+                            return "Unos ulice je obavezno!";
+                        }
+                        break;
+
+                    case "Broj":
+                        if (string.IsNullOrEmpty(Broj))
+                        {
+                            return "Unos broja je obavezno!";
+                        }
+                        break;
+
+                    case "Grad":
+                        if (string.IsNullOrEmpty(Grad))
+                        {
+                            return "Unos grada je obavezno!";
+                        }
+                        break;
+
+                    case "Drzava":
+                        if (string.IsNullOrEmpty(Drzava))
+                        {
+                            return "Unos drzave je obavezno!";
+                        }
+                        break;
+
+                }
+
+                return String.Empty;
+            }
+
+        }
         public override string ToString()
         {
             return "Sifra fitnes centra: " + _sifra + ", naziv: " + _naziv + ".";

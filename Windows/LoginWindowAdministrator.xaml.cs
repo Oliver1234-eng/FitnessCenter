@@ -29,8 +29,8 @@ namespace SR12_2020_POP2021.Windows
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (usernames.Contains(txtJMBG.Text) && passwords.Contains(txtLozinka.Text) && Array.IndexOf(usernames, txtJMBG.Text) ==
-                Array.IndexOf(passwords, txtLozinka.Text))
+            if (usernames.Contains(txtJMBG.Text) && passwords.Contains(txtLozinka.Password) && Array.IndexOf(usernames, txtJMBG.Text) ==
+                Array.IndexOf(passwords, txtLozinka.Password))
             {
                 HomeWindowZaAdministratora homeWindowZaAdministratora = new HomeWindowZaAdministratora();
                 this.Hide();

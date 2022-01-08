@@ -16,7 +16,7 @@
                   AutoGeneratingColumn="DGInstruktori_AutoGeneratingColumn" CanUserSortColumns="True">
         </DataGrid>
 
-        <TextBox HorizontalAlignment="Left" Name="txtPretraga"  Height="23" Margin="43,307,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" PreviewKeyUp="txtPretraga_PreviewKeyUp"/>
+        <TextBox HorizontalAlignment="Left" Name="txtPretraga"  Height="23" Margin="43,307,0,0" TextWrapping="Wrap" Text="mika" VerticalAlignment="Top" Width="120" PreviewKeyUp="txtPretraga_PreviewKeyUp"/>
         <TextBox HorizontalAlignment="Left" Name="txtPretragaPrezime" Height="23" Margin="205,307,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" PreviewKeyUp="txtPretragaPrezime_PreviewKeyUp"/>
         <Label Content="Pretraga po imenu: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="43,281,0,0"/>
         <Label Content="Pretraga po prezimenu: " HorizontalAlignment="Left" Margin="205,285,0,0" VerticalAlignment="Top" Width="149"/>

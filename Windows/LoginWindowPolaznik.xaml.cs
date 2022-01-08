@@ -24,13 +24,13 @@ namespace SR12_2020_POP2021.Windows
             InitializeComponent();
         }
 
-        string[] usernames = { "333333", "999898"};
-        string[] passwords = { "marko", "mika123"};
+        string[] usernames = { "333333", "999898", "444444"};
+        string[] passwords = { "marko", "mika123", "zika"};
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (usernames.Contains(txtJMBG.Text) && passwords.Contains(txtLozinka.Text) && Array.IndexOf(usernames, txtJMBG.Text) ==
-                Array.IndexOf(passwords, txtLozinka.Text))
+            if (usernames.Contains(txtJMBG.Text) && passwords.Contains(txtLozinka.Password) && Array.IndexOf(usernames, txtJMBG.Text) ==
+                Array.IndexOf(passwords, txtLozinka.Password))
             {
                 HomeWindowZaPolaznika homeWindowZaPolaznika = new HomeWindowZaPolaznika();
                 this.Hide();
