@@ -4,8 +4,8 @@
 4;17.06.2022.;16h;1h;Slobodan;mika;Nema;True
 5;18.06.2022.;16h;1h;Slobodan;mika;Nema;True
 66;24.06.2022.;16h;1h;Rezervisan;mika;zika;True
-77;19.06.2022.;16h;1h;Slobodan;mika;Nema;True
-8;21.06.2022.;16h;1h;Slobodan;mika;Nema;True
+77;19.06.2022.;16h;1h;Slobodan;ins2;Nema;True
+8;21.06.2022.;16h;1h;Slobodan;ins3;Nema;True
 99;20.06.2022.;16h;1h;Slobodan;mika;Nema;True
 44;28.06.2022.;16h;1h;Slobodan;mika;Nema;True
 55;30.06.2022.;16:00;1h;Rezervisan;mika;markooo;True

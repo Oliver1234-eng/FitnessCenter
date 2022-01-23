@@ -9,6 +9,7 @@ probaMessageBox;probic;888789;ZENSKI;probic@gmail.com;probic123;POLAZNIK;8;Ulica
 PPP;PP;666565;MUSKI;pp@gmail.com;pp123;POLAZNIK;9;U9;9;Novi Sad;Srbija;False
 ins3;insic3;888000;ZENSKI;ins3@gmail.com;ins776;INSTRUKTOR;9;Ulica9;9;Novi Sad;Srbija;False
 PP;PP;888799;ZENSKI;ppp@gmail.com;ppp1234;POLAZNIK;66;u6;6;Novi Sad;Srbija;False
-ins3;ins3;777667;ZENSKI;ins3@gmail.com;ins888;INSTRUKTOR;55;u5;5;Novi Sad;Srbija;True
+ins3;ins3;777667;ZENSKI;ins3@gmail.com;ins8888;INSTRUKTOR;55;u5;5;Novi Sad;Srbija;True
 ins4;ins4;888798;ZENSKI;ins4@gmail.com;ins777;INSTRUKTOR;88;u8;8;Novi Sad;Srbija;False
 ins5;ins5;999009;MUSKI;ins5@gmail.com;ins555;INSTRUKTOR;66;u6;6;Novi Sad;Srbija;False
+ins4;ins4;444342;MUSKI;ins4@gmail.com;lozinka123;INSTRUKTOR;444;Ulica;44;Novi Sad;Srbija;True
