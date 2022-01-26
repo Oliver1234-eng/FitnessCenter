@@ -72,5 +72,12 @@ namespace SR12_2020_POP2021.Windows
             this.Hide();
             treninziInstruktorIns3PolaznikWindow.Show();
         }
+
+        private void btnPregledSvojihTreninga_Click(object sender, RoutedEventArgs e)
+        {
+            PregledSvojihTreningaPolaznikWindow pregledSvojihTreningaPolaznikWindow = new PregledSvojihTreningaPolaznikWindow();
+            this.Hide();
+            pregledSvojihTreningaPolaznikWindow.Show();
+        }
     }
 }

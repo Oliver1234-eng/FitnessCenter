@@ -164,6 +164,9 @@
     <Compile Include="Windows\PregledSvojihTreningaInstruktorWindow.xaml.cs">
       <DependentUpon>PregledSvojihTreningaInstruktorWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\PregledSvojihTreningaPolaznikWindow.xaml.cs">
+      <DependentUpon>PregledSvojihTreningaPolaznikWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\PregledSvojihTreningaRezervisanihInstruktorWindow.xaml.cs">
       <DependentUpon>PregledSvojihTreningaRezervisanihInstruktorWindow.xaml</DependentUpon>
     </Compile>
@@ -311,6 +314,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\PregledSvojihTreningaInstruktorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PregledSvojihTreningaPolaznikWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

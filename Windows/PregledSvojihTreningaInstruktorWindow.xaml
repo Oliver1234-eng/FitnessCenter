@@ -18,9 +18,15 @@
                   AutoGeneratingColumn="DGTreninzi_AutoGeneratingColumn" CanUserSortColumns="True">
         </DataGrid>
 
-        <TextBox HorizontalAlignment="Left" Name="txtPretraga"  Height="23" Margin="460,61,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" PreviewKeyUp="txtPretraga_PreviewKeyUp"/>
-        <Label Content="Prikaz svih slobodnih treninga" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Height="39" Margin="278,17,0,0" VerticalAlignment="Top" Width="320"/>
-        <Button Content="Nazad" FontWeight="Bold" FontStyle="Italic" Click="Button_Click" HorizontalAlignment="Left" Height="35" Margin="131,353,0,0" VerticalAlignment="Top" Width="88"/>
-        <Label Content="Pretraga treninga po datumu: " FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Height="28" Margin="187,56,0,0" VerticalAlignment="Top" Width="253"/>
+        <TextBox HorizontalAlignment="Left" Name="txtPretraga"  Height="23" Margin="605,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" PreviewKeyUp="txtPretraga_PreviewKeyUp"/>
+        <Label Content="Prikaz svih slobodnih treninga" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Height="39" Margin="257,12,0,0" VerticalAlignment="Top" Width="320"/>
+        <Button Content="Nazad" FontWeight="Bold" FontStyle="Italic" Click="Button_Click" HorizontalAlignment="Left" Height="35" Margin="654,356,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label Content="Pretraga po datumu:" FontWeight="Bold" HorizontalAlignment="Left" Margin="474,56,0,0" VerticalAlignment="Top"/>
+        <Label Content="Pretraga po sifri: " HorizontalAlignment="Left" Height="24" Margin="33,307,0,0" VerticalAlignment="Top" Width="107"/>
+        <Label Content="Pretraga po vremenu pocetka: " HorizontalAlignment="Left" Height="24" Margin="163,307,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label Content="Pretraga po trajanju: " HorizontalAlignment="Left" Height="24" Margin="385,307,0,0" VerticalAlignment="Top" Width="127"/>
+        <TextBox HorizontalAlignment="Left" Name="txtPretragaSifra" PreviewKeyUp="txtPretragaSifra_PreviewKeyUp" Height="27" Margin="33,347,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="85"/>
+        <TextBox HorizontalAlignment="Left" Height="27" Name="txtPretragaVremePocetka" PreviewKeyUp="txtPretragaVremePocetka_PreviewKeyUp" Margin="163,347,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+        <TextBox HorizontalAlignment="Left" Height="27" Name="txtPretragaTrajanje" PreviewKeyUp="txtPretragaTrajanje_PreviewKeyUp" Margin="385,347,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="108"/>
     </Grid>
 </Window>

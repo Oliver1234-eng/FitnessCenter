@@ -17,13 +17,13 @@ using System.Windows.Shapes;
 namespace SR12_2020_POP2021.Windows
 {
     /// <summary>
-    /// Interaction logic for TreninziInstruktorIns2PolaznikWindow.xaml
+    /// Interaction logic for PregledSvojihTreningaPolaznikWindow.xaml
     /// </summary>
-    public partial class TreninziInstruktorIns2PolaznikWindow : Window
+    public partial class PregledSvojihTreningaPolaznikWindow : Window
     {
         ICollectionView view;
 
-        public TreninziInstruktorIns2PolaznikWindow()
+        public PregledSvojihTreningaPolaznikWindow()
         {
             InitializeComponent();
             UpdateView();
@@ -36,7 +36,7 @@ namespace SR12_2020_POP2021.Windows
             Trening trening = obj as Trening;
             //RegistrovaniKorisnik korisnik1 = (RegistrovaniKorisnik)obj ;
 
-            if (trening.Aktivan && trening.Instruktor.Equals(EImenaInstruktora.ins2))
+            if (trening.Aktivan && trening.Polaznik.Equals(EImenaPolaznika.markooo))
             {
                 if (txtPretraga.Text != "")
                 {

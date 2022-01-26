@@ -36,15 +36,15 @@
         </TextBox>
 
 
-        <Label Name="lblDatum" Content="Datum: " Grid.Row="1" Grid.Column="0"/>
+        <Label Name="lblDatum" Content="Datum: (format DD:MM:GGGG): " Grid.Row="1" Grid.Column="0"/>
         <TextBox Name="txtDatum" Grid.Row="1" Grid.Column="1" Text="{Binding Path=Datum, ValidatesOnDataErrors=True}"/>
         <TextBlock Text="{Binding ElementName=txtDatum, Path=(Validation.Errors)[1].ErrorContent}" Foreground="red"/>
 
-        <Label Name="lblVremePocetka" Content="Vreme pocetka: " Grid.Row="2" Grid.Column="0"/>
+        <Label Name="lblVremePocetka" Content="Vreme pocetka u celim satima: " Grid.Row="2" Grid.Column="0"/>
         <TextBox Name="txtVremePocetka" Grid.Row="2" Grid.Column="1" Text="{Binding Path=VremePocetka, ValidatesOnDataErrors=True}" />
         <TextBlock Text="{Binding ElementName=txtVremePocetka, Path=(Validation.Errors)[2].ErrorContent}" Foreground="red"/>
 
-        <Label Name="lblTrajanje" Content="Trajanje: " Grid.Row="3" Grid.Column="0"/>
+        <Label Name="lblTrajanje" Content="Trajanje u minutima: " Grid.Row="3" Grid.Column="0"/>
         <TextBox Name="txtTrajanje" Grid.Row="3" Grid.Column="1" Text="{Binding Path=Trajanje, ValidatesOnDataErrors=True}" />
         <TextBlock Text="{Binding ElementName=txtTrajanje, Path=(Validation.Errors)[3].ErrorContent}" Foreground="red"/>
 

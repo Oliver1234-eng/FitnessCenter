@@ -42,6 +42,22 @@ namespace SR12_2020_POP2021.Windows
                 {
                     return trening.Datum.Contains(txtPretraga.Text);
                 }
+
+                if (txtPretragaSifra.Text != "")
+                {
+                    return trening.Sifra.Contains(txtPretragaSifra.Text);
+                }
+
+                if (txtPretragaVremePocetka.Text != "")
+                {
+                    return trening.VremePocetka.Contains(txtPretragaVremePocetka.Text);
+                }
+
+                if (txtPretragaTrajanje.Text != "")
+                {
+                    return trening.Trajanje.Contains(txtPretragaTrajanje.Text);
+                }
+
                 else
                     return true;
             }
@@ -110,6 +126,21 @@ namespace SR12_2020_POP2021.Windows
             HomeWindowZaInstruktora homeWindowZaInstruktora = new HomeWindowZaInstruktora();
             this.Hide();
             homeWindowZaInstruktora.Show();
+        }
+
+        private void txtPretragaSifra_PreviewKeyUp(object sender, KeyEventArgs e)
+        {
+            view.Refresh();
+        }
+
+        private void txtPretragaVremePocetka_PreviewKeyUp(object sender, KeyEventArgs e)
+        {
+            view.Refresh();
+        }
+
+        private void txtPretragaTrajanje_PreviewKeyUp(object sender, KeyEventArgs e)
+        {
+            view.Refresh();
         }
     }
 }
