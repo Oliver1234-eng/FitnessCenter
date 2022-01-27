@@ -36,7 +36,7 @@ namespace SR12_2020_POP2021.Windows
             Trening trening = obj as Trening;
             //RegistrovaniKorisnik korisnik1 = (RegistrovaniKorisnik)obj ;
 
-            if (trening.StatusTreninga.Equals(EStatusTreninga.Rezervisan) && trening.Aktivan)
+            if (trening.StatusTreninga.Equals(EStatusTreninga.Rezervisan) && trening.Aktivan && trening.Polaznik.Equals(EImenaPolaznika.markooo))
             {
                 if (txtPretraga.Text != "")
                 {

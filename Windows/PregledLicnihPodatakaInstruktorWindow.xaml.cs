@@ -168,9 +168,9 @@ namespace SR12_2020_POP2021.Windows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            HomeWindowZaAdministratora homeWindowZaAdministratora = new HomeWindowZaAdministratora();
+            HomeWindowZaInstruktora homeWindowZaInstruktora = new HomeWindowZaInstruktora();
             this.Hide();
-            homeWindowZaAdministratora.Show();
+            homeWindowZaInstruktora.Show();
 
         }
 

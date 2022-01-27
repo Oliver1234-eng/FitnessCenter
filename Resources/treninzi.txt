@@ -12,3 +12,4 @@
 66;27.6.2022.;16;60;Slobodan;mika;Nema;True
 88;26.06.2022.;16;60;Rezervisan;mika;markooo;True
 65;01.07.2022.;16;60;Slobodan;ins3;Nema;True
+77;02.07.2022.;16;60;Rezervisan;ins3;markooo;True

@@ -167,9 +167,9 @@ namespace SR12_2020_POP2021.Windows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            HomeWindowZaAdministratora homeWindowZaAdministratora = new HomeWindowZaAdministratora();
+            HomeWindowZaPolaznika homeWindowZaPolaznika = new HomeWindowZaPolaznika();
             this.Hide();
-            homeWindowZaAdministratora.Show();
+            homeWindowZaPolaznika.Show();
         }
 
         private void txtPretragaGrad_PreviewKeyUp(object sender, KeyEventArgs e)
