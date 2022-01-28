@@ -10,6 +10,7 @@ namespace SR12_2020_POP2021.Model
     {
         Nema,
         zika,
-        markooo
+        markooo,
+        noviPolaznik
     }
 }

@@ -24,8 +24,8 @@ namespace SR12_2020_POP2021.Windows
             InitializeComponent();
         }
 
-        string[] usernames = { "333333", "999898", "444444"};
-        string[] passwords = { "marko", "mika123", "zika"};
+        string[] usernames = { "333333", "999898", "444444", "111998"};
+        string[] passwords = { "marko", "mika123", "zika", "noviPolaznik"};
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {

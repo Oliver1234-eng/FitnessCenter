@@ -1,10 +1,10 @@
-1;16.06.2022.;16;60;Slobodan;mika;Nema;True
+1;16.06.2022.;16;60;Rezervisan;mika;markooo;True
 2;22.06.2022.;16;60;Rezervisan;ins2;zika;True
 3;23.06.2022.;16;60;Rezervisan;ins3;zika;True
 4;17.06.2022.;16;60;Slobodan;mika;Nema;True
 5;18.06.2022.;16;60;Slobodan;mika;Nema;True
 66;24.06.2022.;16;60;Rezervisan;ins2;zika;True
-77;19.06.2022.;16;60;Slobodan;ins2;Nema;True
+77;19.06.2022.;16;60;Rezervisan;ins2;noviPolaznik;True
 8;21.06.2022.;16;60;Slobodan;ins3;Nema;True
 99;20.06.2022.;16;60;Slobodan;mika;Nema;True
 44;28.06.2022.;16;60;Slobodan;mika;Nema;True
@@ -12,4 +12,4 @@
 66;27.6.2022.;16;60;Slobodan;mika;Nema;True
 88;26.06.2022.;16;60;Rezervisan;mika;markooo;True
 65;01.07.2022.;16;60;Slobodan;ins3;Nema;True
-77;02.07.2022.;16;60;Rezervisan;ins3;markooo;True
+77;02.07.2022.;16;60;Slobodan;ins3;Nema;True

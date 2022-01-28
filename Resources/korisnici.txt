@@ -1,4 +1,4 @@
-mika;Mikic;111111;MUSKI;mika@gmail.com;zika;INSTRUKTOR;2;Ulica2;2;Novi Sad;Srbija;True
+mika;Mikic;111111;MUSKI;mika@gmail.com;zika;INSTRUKTOR;22;Ulica2;2;Novi Sad;Srbija;True
 Peraaa;Peric;222222;MUSKI;pera@gmail.com;peki;ADMINISTRATOR;1;Ulica1;1;Novi Sad;Srbija;True
 markooo;Markicc;333333;MUSKI;marko@gmail.com;marko;POLAZNIK;3;Ulica3;3;Novi Sad;Srbija;True
 1111111;ins2;ins2;MUSKI;ins2@gmail.com;ins123;INSTRUKTOR;6;U6;6;Novi Sad;Srbija;False
@@ -12,4 +12,5 @@ PP;PP;888799;ZENSKI;ppp@gmail.com;ppp1234;POLAZNIK;66;u6;6;Novi Sad;Srbija;False
 ins3;ins3;777667;ZENSKI;ins3@gmail.com;ins8888;INSTRUKTOR;55;u5;5;Novi Sad;Srbija;True
 ins4;ins4;888798;ZENSKI;ins4@gmail.com;ins777;INSTRUKTOR;88;u8;8;Novi Sad;Srbija;False
 ins5;ins5;999009;MUSKI;ins5@gmail.com;ins555;INSTRUKTOR;66;u6;6;Novi Sad;Srbija;False
-ins4;ins4;444342;MUSKI;ins4@gmail.com;lozinka1234;INSTRUKTOR;44;Ulica;44;Novi Sad;Srbija;True
+ins44;ins4;444342;MUSKI;ins4@gmail.com;lozinka1234;INSTRUKTOR;44;Ulica;44;Novi Sad;Srbija;True
+noviPolaznik;noviPolaznik;111998;MUSKI;noviPolaznik@gmail.com;noviPolaznik123;POLAZNIK;44;Ulica;4;Novi Sad;Srbija;True

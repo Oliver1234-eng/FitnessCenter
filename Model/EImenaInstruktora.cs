@@ -11,6 +11,7 @@ namespace SR12_2020_POP2021.Model
         Nema,
         mika,
         ins2,
-        ins3
+        ins3,
+        noviInstruktor
     }
 }
